@@ -1,0 +1,3 @@
+inMenu = false;
+isMovingToSurf = false;
+
