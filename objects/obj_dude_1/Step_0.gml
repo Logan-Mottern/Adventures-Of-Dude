@@ -75,6 +75,12 @@ if (keyboard_check(ord("1"))) && (!instance_exists(obj_shotgun))
 	weapon = 1;
 }
 
+if (keyboard_check(ord("2"))) && (!instance_exists(obj_pistol))
+{
+	instance_create_layer(x, y, layer, obj_pistol);
+	weapon = 2;
+}
+
 if (keyboard_check(ord("3")))
 {
 	weapon = 0;
