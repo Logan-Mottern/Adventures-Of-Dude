@@ -2,6 +2,7 @@ image_speed = .5
 
 if (hp) <= 0
 {
+	screenshake(20, 3, 0.3);
 	instance_create_layer(x,y,layer,obj_blue_slime_pop);
 	instance_destroy();
 }
