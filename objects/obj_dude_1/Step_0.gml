@@ -69,15 +69,15 @@ if objM_backpack.isMovingToSurf = true
 
 direction = point_direction(x,y,mouse_x,mouse_y);
 
-if (keyboard_check(ord("1"))) && (!instance_exists(obj_shotgun))
+if (keyboard_check(ord("1"))) && (!instance_exists(obj_shotgun_2))
 {
-	instance_create_layer(x, y, layer, obj_shotgun);
+	instance_create_layer(x, y, layer, obj_shotgun_2);
 	weapon = 1;
 }
 
-if (keyboard_check(ord("2"))) && (!instance_exists(obj_pistol))
+if (keyboard_check(ord("2"))) && (!instance_exists(obj_pistol_2))
 {
-	instance_create_layer(x, y, layer, obj_pistol);
+	instance_create_layer(x, y, layer, obj_pistol_2);
 	weapon = 2;
 }
 
