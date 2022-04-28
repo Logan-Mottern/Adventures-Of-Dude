@@ -2,7 +2,7 @@
 //Put the player in the center of the screen
 
 var cam_x = obj_dude_1.x - camera_get_view_width(view_camera[0]) / 2;
-var cam_y = obj_dude_1.y - camera_get_view_height(view_camera[0] / 2);
+var cam_y = obj_dude_1.y - camera_get_view_height(view_camera[0]) / 2;
 
 if (shake)
 {
@@ -14,10 +14,10 @@ if (shake)
 	{
 		shake_magnitude -= shake_fade;
 		
-		if (shake_magnitude <= 0)
+		if (shake_time <= 0)
 		{
 			var cam_x = obj_dude_1.x - camera_get_view_width(view_camera[0]) / 2;
-			var cam_y = obj_dude_1.y - camera_get_view_height(view_camera[0] / 2);
+			var cam_y = obj_dude_1.y - camera_get_view_height(view_camera[0]) / 2;
 			shake = false
 		}
 	}

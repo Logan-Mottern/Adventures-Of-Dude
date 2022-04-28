@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cadee64a-24c7-4057-bfa6-f8450f94d35c","path":"sprites/spr_dude_1/spr_dude_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cadee64a-24c7-4057-bfa6-f8450f94d35c","path":"sprites/spr_dude_1/spr_dude_1.yy",},"LayerId":{"name":"72323eb2-2050-45f3-911d-cfdd72168331","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_dude_1","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","name":"cadee64a-24c7-4057-bfa6-f8450f94d35c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a500dca0-fd0a-4408-b9f5-fc712df85096","path":"sprites/spr_dude_1/spr_dude_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a500dca0-fd0a-4408-b9f5-fc712df85096","path":"sprites/spr_dude_1/spr_dude_1.yy",},"LayerId":{"name":"72323eb2-2050-45f3-911d-cfdd72168331","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_dude_1","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","name":"a500dca0-fd0a-4408-b9f5-fc712df85096","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"90ac24cc-5e21-4abb-9e76-581d818cfee9","path":"sprites/spr_dude_1/spr_dude_1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"90ac24cc-5e21-4abb-9e76-581d818cfee9","path":"sprites/spr_dude_1/spr_dude_1.yy",},"LayerId":{"name":"72323eb2-2050-45f3-911d-cfdd72168331","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_dude_1","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","name":"90ac24cc-5e21-4abb-9e76-581d818cfee9","tags":[],"resourceType":"GMSpriteFrame",},
@@ -50,7 +50,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f55c986c-8390-475c-bb9a-c20eee5c8928","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cadee64a-24c7-4057-bfa6-f8450f94d35c","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b70444aa-1c27-4bfd-b67d-d3be2260be01","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a500dca0-fd0a-4408-b9f5-fc712df85096","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d097db78-32de-4156-a6fc-8e0dcb27ec43","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90ac24cc-5e21-4abb-9e76-581d818cfee9","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"294936f7-32f6-4958-918b-d1f0efca71b9","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0be843dd-da4f-435a-8a72-ec5528a20ac2","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"84fd1883-2e50-4b09-a800-5134411c4e98","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dcedd4a1-c6e8-494a-869c-111a896b3f34","path":"sprites/spr_dude_1/spr_dude_1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
