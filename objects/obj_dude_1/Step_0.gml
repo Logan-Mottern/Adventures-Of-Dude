@@ -85,3 +85,9 @@ if (keyboard_check(ord("3")))
 {
 	weapon = 0;
 }
+
+if (keyboard_check(ord("9"))) && (!instance_exists(obj_handofgod))
+{
+	instance_create_layer(x, y, layer, obj_handofgod);
+	weapon = 9;
+}

@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_blue_slime_pop",
-    "path": "sprites/spr_blue_slime_pop/spr_blue_slime_pop.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,17 +18,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Weapon Objects",
+    "path": "folders/Objects/Weapon Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_blue_slime_pop",
+  "name": "obj_bullet_handofgod",
   "tags": [],
   "resourceType": "GMObject",
 }
