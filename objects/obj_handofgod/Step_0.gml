@@ -28,6 +28,13 @@ if (mouse_check_button(mb_left)) && (cooldown < 1) && (obj_dude_1.weapon = 9) &&
 {
 	obj_dude_1.spread = 10
 	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
+	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
+	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
+	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
+	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
+	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
+	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
+	instance_create_layer(x, y, "Enemys", obj_bullet_handofgod);
 	cooldown = 1;
 	ammo -= 0
 }

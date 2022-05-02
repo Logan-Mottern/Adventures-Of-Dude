@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_pistol_2",
-    "path": "sprites/spr_pistol_2/spr_pistol_2.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -31,7 +28,7 @@
     "path": "folders/Objects/Interactive Objects/Menu Objects/Weapon Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pistol_2",
+  "name": "obj_weapon",
   "tags": [],
   "resourceType": "GMObject",
 }

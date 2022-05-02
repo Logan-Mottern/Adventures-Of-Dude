@@ -69,25 +69,52 @@ if objM_backpack.isMovingToSurf = true
 
 direction = point_direction(x,y,mouse_x,mouse_y);
 
-if (keyboard_check(ord("1"))) && (!instance_exists(obj_shotgun_2))
+if (keyboard_check(ord("1")))
 {
-	instance_create_layer(x, y, layer, obj_shotgun_2);
 	weapon = 1;
+	activeWeapon("spr_shotgun_2","obj_bullet_low",1,30,90,3,12,3)
 }
 
-if (keyboard_check(ord("2"))) && (!instance_exists(obj_pistol_2))
+if (keyboard_check(ord("2")))
 {
-	instance_create_layer(x, y, layer, obj_pistol_2);
 	weapon = 2;
 }
 
 if (keyboard_check(ord("3")))
 {
+	weapon = 3;
+}
+
+if (keyboard_check(ord("4")))
+{
 	weapon = 0;
 }
 
-if (keyboard_check(ord("9"))) && (!instance_exists(obj_handofgod))
+//Health
+if justHit != false && justHitCooldown <= 0
 {
-	instance_create_layer(x, y, layer, obj_handofgod);
-	weapon = 9;
+	dudehp = dudehp - 1;
+	justHitCooldown = 15;
+}
+
+if dudehp <= 0
+{
+	room_restart();
+}
+
+justHitCooldown -= 1
+
+//Hit Detect
+
+if justHit = true
+{
+	image_index = image_index + 4;
+	imageCycleHit = 5;
+	justHit = false;
+	
+}
+
+if imageCycleHit != 0
+{
+	imageCycleHit = imageCycleHit - 1;
 }
