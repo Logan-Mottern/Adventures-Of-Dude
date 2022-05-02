@@ -91,32 +91,3 @@ if (keyboard_check(ord("9"))) && (!instance_exists(obj_handofgod))
 	instance_create_layer(x, y, layer, obj_handofgod);
 	weapon = 9;
 }
-
-//Health
-if justHit != false && justHitCooldown <= 0
-{
-	dudehp = dudehp - 1;
-	justHitCooldown = 15;
-}
-
-if dudehp <= 0
-{
-	room_restart();
-}
-
-justHitCooldown -= 1
-
-//Hit Detect
-
-if justHit = true
-{
-	image_index = image_index + 4;
-	imageCycleHit = 5;
-	justHit = false;
-	
-}
-
-if imageCycleHit != 0
-{
-	imageCycleHit = imageCycleHit - 1;
-}

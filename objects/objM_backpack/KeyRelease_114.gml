@@ -1,1 +1,1 @@
-screenshake(20, 50, 0.3);
+screenshake(20, 3, 0.3);
