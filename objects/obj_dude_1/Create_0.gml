@@ -5,3 +5,7 @@ walkCycleSpeed = 10;
 weapon = 0;
 facing = 0;
 spread = 0;
+justHit = false;
+imageCycleHit = 0;
+dudehp = 10;
+justHitCooldown = 0
