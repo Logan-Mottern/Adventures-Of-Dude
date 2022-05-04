@@ -67,22 +67,26 @@ if objM_backpack.isMovingToSurf = true
 
 // Attack
 
+//activeWeapon(_weapon,_ammo,_number,_cooldown,_reload,_capacity,_spread,_pellets)
+
 direction = point_direction(x,y,mouse_x,mouse_y);
 
 if (keyboard_check(ord("1")))
 {
 	weapon = 1;
-	activeWeapon("spr_shotgun_2","obj_bullet_low",1,30,90,3,12,3)
+	activeWeapon(spr_shotgun_2,obj_bullet_low,1,30,90,3,12,3)
 }
 
 if (keyboard_check(ord("2")))
 {
 	weapon = 2;
+	activeWeapon(spr_pistol_2,obj_bullet_low,2,30,90,3,12,3)
 }
 
 if (keyboard_check(ord("3")))
 {
 	weapon = 3;
+	activeWeapon(spr_pistol_2,obj_bullet_low,3,10,60,6,4,1)
 }
 
 if (keyboard_check(ord("4")))
