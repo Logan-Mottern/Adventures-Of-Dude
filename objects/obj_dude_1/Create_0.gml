@@ -3,7 +3,6 @@ walkCycleTimer = 1;
 walkCycle = 0;
 walkCycleSpeed = 10;
 facing = 0;
-spread = 0;
 justHit = false;
 imageCycleHit = 0;
 dudehp = 10;

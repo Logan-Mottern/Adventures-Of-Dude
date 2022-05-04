@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets)
+function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin)
 {
 	if instance_exists(obj_weapon)
 	{
@@ -19,5 +19,6 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 		WFpellets = _pellets;
 		WFspread = _spread;
 		WFammo = _ammo;
+		WFspin = _spin
 	}
 }

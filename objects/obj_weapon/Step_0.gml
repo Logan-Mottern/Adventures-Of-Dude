@@ -26,7 +26,6 @@ if obj_dude_1.image_index = 2 or obj_dude_1.image_index = 3
 
 if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0
 {
-	obj_dude_1.spread = WFspread;
 	repeat (WFpellets)
 	{
 		instance_create_layer(x, y, "Enemys", WFammo);
@@ -38,9 +37,12 @@ cooldown = cooldown - 1;
 
 //Cooldown
 
-if cooldown > 0
+if cooldown > 0 
 {
-	image_angle = image_angle + (360/WFcooldown)
+	if WFspin = true
+	{
+		image_angle = image_angle + (360/WFcooldown);
+	}
 }
 
 //Reload

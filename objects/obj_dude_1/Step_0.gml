@@ -67,23 +67,23 @@ if objM_backpack.isMovingToSurf = true
 
 // Attack
 
-//activeWeapon(_weapon,_ammo,_number,_cooldown,_reload,_capacity,_spread,_pellets)
+//activeWeapon(_weapon,_ammo,_number,_cooldown,_reload,_capacity,_spread,_pellets,_spin)
 
 direction = point_direction(x,y,mouse_x,mouse_y);
 
 if (keyboard_check(ord("1")))
 {
-	activeWeapon(spr_shotgun_2,obj_bullet_low,30,90,3,12,3)
+	activeWeapon(spr_rifle_2,obj_bullet_low,45,90,4,0,10,false);
 }
 
 if (keyboard_check(ord("2")))
 {
-	activeWeapon(spr_pistol_2,obj_bullet_low,30,90,3,12,3)
+	activeWeapon(spr_shotgun_2,obj_bullet_low,30,90,3,12,3,true);
 }
 
 if (keyboard_check(ord("3")))
 {
-	activeWeapon(spr_pistol_2,obj_bullet_low,10,60,6,4,1)
+	activeWeapon(spr_pistol_2,obj_bullet_low,10,60,6,4,1,true);
 }
 
 //Health

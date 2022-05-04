@@ -5,6 +5,7 @@ WFreload = 0;
 WFcapacity = 0;
 WFpellets = 0;
 WFspread = 0;
+WFspin = false;
 WFammo = "none";
 
 cooldown = 0;
