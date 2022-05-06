@@ -79,7 +79,7 @@
     {"id":{"name":"objB_DualCorner","path":"objects/objB_DualCorner/objB_DualCorner.yy",},"order":3,},
     {"id":{"name":"objB_trees5","path":"objects/objB_trees5/objB_trees5.yy",},"order":9,},
     {"id":{"name":"sprB_Corner2","path":"sprites/sprB_Corner2/sprB_Corner2.yy",},"order":0,},
-    {"id":{"name":"spr_tiles_true","path":"sprites/spr_tiles_true/spr_tiles_true.yy",},"order":6,},
+    {"id":{"name":"spr_tiles_16px","path":"sprites/spr_tiles_16px/spr_tiles_16px.yy",},"order":6,},
     {"id":{"name":"sprB_trees5","path":"sprites/sprB_trees5/sprB_trees5.yy",},"order":4,},
     {"id":{"name":"spr_flame","path":"sprites/spr_flame/spr_flame.yy",},"order":3,},
     {"id":{"name":"sprIC_potion_strongman","path":"sprites/sprIC_potion_strongman/sprIC_potion_strongman.yy",},"order":0,},
