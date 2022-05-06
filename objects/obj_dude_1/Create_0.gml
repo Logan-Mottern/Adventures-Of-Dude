@@ -7,3 +7,4 @@ justHit = false;
 imageCycleHit = 0;
 dudehp = 10;
 justHitCooldown = 0
+

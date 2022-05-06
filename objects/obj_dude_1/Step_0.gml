@@ -73,18 +73,39 @@ direction = point_direction(x,y,mouse_x,mouse_y);
 
 if (keyboard_check(ord("1")))
 {
-	activeWeapon(spr_rifle_2,obj_bullet_low,45,90,4,0,10,false);
+	activeWeapon(spr_automatic_1,spr_bullet_1,5,90,8,12,1,49,1,5,0,0)
 }
 
 if (keyboard_check(ord("2")))
 {
-	activeWeapon(spr_shotgun_2,obj_bullet_low,30,90,3,12,3,true);
+	activeWeapon(spr_shotgun_1,spr_bullet_1,0,90,1,18,5,6,1,5,0,0);
 }
 
 if (keyboard_check(ord("3")))
 {
-	activeWeapon(spr_pistol_2,obj_bullet_low,10,60,6,4,1,true);
+	activeWeapon(spr_pistol_1,spr_bullet_1,15,90,2,6,1,6,1,4,0,0);
 }
+
+if (keyboard_check(ord("4")))
+{
+	activeWeapon(spr_automatic_2,spr_bullet_2,5,90,20,6,1,16,1,5,0,0);
+}
+
+if (keyboard_check(ord("5")))
+{
+	activeWeapon(	spr_elemental_2	,	spr_flame	,	1	,	180	,	90	,	6	,	1	,	15	,	1	,	1.5	,	0.05	,	900	);
+}
+
+if (keyboard_check(ord("6")))
+{
+	activeWeapon(	spr_energy_2	,	spr_bullet_2E	,	3	,	90	,	30	,	6	,	1	,	2	,	0.5	,	4	,	0	,	0	);
+}
+
+if (keyboard_check(ord("7")))
+{
+	activeWeapon(spr_dude_1,spr_dude_1,0,90,360,180,360,1,5,2,0,0);
+}
+//activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin)
 
 //Health
 if justHit != false && justHitCooldown <= 0
