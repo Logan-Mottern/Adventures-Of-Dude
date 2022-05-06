@@ -1,21 +1,21 @@
 //Angle
 
-y = (obj_dude_1.y) - 1;
+y = (obj_dude_1.y) - 0.5;
 
-if obj_dude_1.image_index = 0 or obj_dude_1.image_index = 1
+if obj_dude_1.left = false
 {
-	x = obj_dude_1.x - 4;
-	image_xscale = 0.5
+	x = obj_dude_1.x - 2;
+	image_xscale = 1
 	if cooldown <= 10
 	{
 		image_angle = obj_dude_1.direction;
 	}
 }
 
-if obj_dude_1.image_index = 2 or obj_dude_1.image_index = 3
+if obj_dude_1.left = true
 {
-	x = obj_dude_1.x + 4;
-	image_xscale = -0.5
+	x = obj_dude_1.x + 2;
+	image_xscale = -1
 	if cooldown <= 10
 	{
 		image_angle = obj_dude_1.direction + 180;

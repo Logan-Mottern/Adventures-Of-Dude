@@ -12,7 +12,7 @@ WFfalloff = 0;
 WFammo = "none";
 
 image_speed = 0;
-image_yscale = -.5;
+image_yscale = -1;
 cooldown = 0;
 ammo = WFcapacity;
 reload = 0;

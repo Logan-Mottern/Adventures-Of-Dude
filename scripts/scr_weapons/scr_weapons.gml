@@ -9,7 +9,7 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 
 	object_set_sprite(obj_weapon,_weapon);
 	
-	instance_create_layer(x,y,"Enemys",obj_weapon);
+	instance_create_layer(x,y,"Weapons",obj_weapon);
 	
 	with obj_weapon
 	{

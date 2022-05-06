@@ -1,0 +1,6 @@
+with (other)
+{
+	justHit = true;
+}
+
+
