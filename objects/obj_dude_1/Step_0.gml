@@ -3,25 +3,25 @@ if objM_backpack.inMenu = false
 {
 	if (keyboard_check(ord("S"))) 
 	{
-		y += 1;
+		y += 1.5;
 		//image_index = facing + walkCycle;
 	}	
 
 	if (keyboard_check(ord("W"))) 
 	{
-		y += -1;
+		y += -1.5;
 		//image_index = facing + walkCycle;
 	}
 
 	if (keyboard_check(ord("D")))
 	{
-		x += 1;
+		x += 1.5;
 		//image_index = facing + walkCycle;
 	}
 
 	if (keyboard_check(ord("A"))) 
 	{
-		x += -1;
+		x += -1.5;
 		//image_index = facing + walkCycle;
 	}
 }
@@ -144,17 +144,17 @@ if tier = 1
 	//Rifl
 	if (keyboard_check(ord("4")))
 	{
-		//activeWeapon();
+		activeWeapon(spr_rifle_1	,	spr_bullet_1	,	45	,	45	,	1	,	0	,	1	,	7	,	5	,	7	,	0	,	0);
 	}
 	//Ener
 	if (keyboard_check(ord("5")))
 	{
-		//activeWeapon();
+		activeWeapon(	spr_energy_1	,	spr_bullet_1E	,	10	,	90	,	15	,	8	,	1	,	2	,	0.25	,	6	,	0	,	0	);
 	}
 	//Elem
 	if (keyboard_check(ord("6")))
 	{
-		//activeWeapon();
+		activeWeapon(spr_elemental_1	,	spr_water	,	2	,	180	,	30	,	6	,	1	,	17	,	1	,	1.5	,	0.05	,	300);
 	}	
 }
 
@@ -168,12 +168,12 @@ if tier = 2
 	//Shot
 	if (keyboard_check(ord("2")))
 	{
-		activeWeapon(spr_shotgun_2	,	spr_bullet_2	,	30	,	90	,	3	,	12	,	3	,	0	,	1.5	,	5	,	0	,	0);
+		activeWeapon(spr_shotgun_2	,	spr_bullet_2	,	30	,	90	,	3	,	12	,	3	,	1	,	1.5	,	5	,	0	,	0);
 	}		
 	//Pist
 	if (keyboard_check(ord("3")))
 	{
-		activeWeapon(	spr_pistol_2	,	spr_bullet_2	,	5	,	90	,	6	,	4	,	1	,	0	,	3	,	5	,	0	,	0	);
+		activeWeapon(	spr_pistol_2	,	spr_bullet_2	,	5	,	90	,	6	,	4	,	1	,	11	,	3	,	5	,	0	,	0	);
 	}		
 	//Rifl
 	if (keyboard_check(ord("4")))

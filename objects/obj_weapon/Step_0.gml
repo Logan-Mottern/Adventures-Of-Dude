@@ -4,7 +4,7 @@ y = (obj_dude_1.y) - 0.5;
 
 if obj_dude_1.left = false
 {
-	x = obj_dude_1.x - 2;
+	x = obj_dude_1.x - 3;
 	image_xscale = 1
 	if cooldown <= 10
 	{
@@ -14,7 +14,7 @@ if obj_dude_1.left = false
 
 if obj_dude_1.left = true
 {
-	x = obj_dude_1.x + 2;
+	x = obj_dude_1.x + 3;
 	image_xscale = -1
 	if cooldown <= 10
 	{

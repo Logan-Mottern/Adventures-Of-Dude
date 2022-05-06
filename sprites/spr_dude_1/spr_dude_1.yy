@@ -41,7 +41,7 @@
     "spriteId": {"name":"spr_dude_1","path":"sprites/spr_dude_1/spr_dude_1.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

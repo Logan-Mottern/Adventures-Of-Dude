@@ -1,4 +1,4 @@
-if image_xscale < .5
+if image_xscale < .75
 {
 	image_xscale += .25
 }

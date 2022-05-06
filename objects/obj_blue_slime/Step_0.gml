@@ -43,7 +43,7 @@ direction = point_direction(x,y,obj_dude_1.x,obj_dude_1.y);
 
 movementCycleTimer -= 1;
 
-if point_distance(x,y,obj_dude_1.x,obj_dude_1.y) < 64 && movementCycleTimer <= 0 && justHit != true
+if point_distance(x,y,obj_dude_1.x,obj_dude_1.y) < 128 && movementCycleTimer <= 0 && justHit != true
 {	
 	//Slow ramp up and ramp down of speed
 	
@@ -52,31 +52,31 @@ if point_distance(x,y,obj_dude_1.x,obj_dude_1.y) < 64 && movementCycleTimer <= 0
 	if movementCycleTimerInternal <= 5 && movementCycleTimerInternal >= 0
 	{
 		speed = .25
-		image_yscale = .45
+		image_yscale = .9
 	}
 	
 	if movementCycleTimerInternal <= 10 && movementCycleTimerInternal >= 5
 	{
 		speed = .5
-		image_yscale = .4
+		image_yscale = .8
 	}
 	
 	if movementCycleTimerInternal <= 20 && movementCycleTimerInternal >= 10
 	{
 		speed = .75
-		image_yscale = .35
+		image_yscale = .7
 	}
 	
 	if movementCycleTimerInternal <= 25 && movementCycleTimerInternal >= 20
 	{
 		speed = .5
-		image_yscale = .4
+		image_yscale = .8
 	}
 	
 	if movementCycleTimerInternal <= 30 && movementCycleTimerInternal >= 25
 	{
 		speed = .25
-		image_yscale = .45
+		image_yscale = .9
 	}
 	
 	if movementCycleTimerInternal >= 30
@@ -88,12 +88,5 @@ if point_distance(x,y,obj_dude_1.x,obj_dude_1.y) < 64 && movementCycleTimer <= 0
 else
 {
 	speed = 0;
-	image_yscale = .5
-}
-
-//Bounce Back
-
-if obj_dude_1.justHit = true
-{
-
+	image_yscale = 1;
 }
