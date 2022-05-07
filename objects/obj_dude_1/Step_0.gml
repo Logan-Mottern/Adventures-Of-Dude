@@ -196,9 +196,15 @@ if tier = 2
 if tier = 3
 {
 	//Auto
-	
+	if (keyboard_check(ord("1")))
+	{
+		activeWeapon(spr_automatic_3	,	spr_bullet_3	,	8	,	180	,	50	,	4	,	1	,	17	,	1	,	5	,	0	,	0);
+	}
 	//Shot
-	
+	if (keyboard_check(ord("2")))
+	{
+		activeWeapon(spr_shotgun_3	,	spr_bullet_3	,	20	,	90	,	6	,	12	,	8	,	44	,	1	,	5	,	0	,	0);
+	}
 	//Pist
 	
 	//Rifl
