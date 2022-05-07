@@ -32,6 +32,7 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0
 		instance_create_layer(x, y, "Enemys", obj_bullet);
 	}
 	
+	//Type Based Noise
 	if random_range(0,1) = 0
 	{
 		audio_play_sound(aud_weapon_fire_1,0,0);

@@ -9,6 +9,8 @@ WFdamage = 0;
 WFspeed = 5;
 WFlifetime = 0;
 WFfalloff = 0;
+WFtype = 0;
+WFtier = 0;
 WFammo = "none";
 
 image_speed = 0;
