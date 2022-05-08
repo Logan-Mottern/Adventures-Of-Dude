@@ -1,30 +1,29 @@
  //Movement
-if objM_backpack.inMenu = false
+
+if (keyboard_check(ord("S"))) 
 {
-	if (keyboard_check(ord("S"))) 
-	{
-		y += 1.5;
-		//image_index = facing + walkCycle;
-	}	
+	y += 1.5;
+	//image_index = facing + walkCycle;
+}	
 
-	if (keyboard_check(ord("W"))) 
-	{
-		y += -1.5;
-		//image_index = facing + walkCycle;
-	}
-
-	if (keyboard_check(ord("D")))
-	{
-		x += 1.5;
-		//image_index = facing + walkCycle;
-	}
-
-	if (keyboard_check(ord("A"))) 
-	{
-		x += -1.5;
-		//image_index = facing + walkCycle;
-	}
+if (keyboard_check(ord("W"))) 
+{
+	y += -1.5;
+	//image_index = facing + walkCycle;
 }
+
+if (keyboard_check(ord("D")))
+{
+	x += 1.5;
+	//image_index = facing + walkCycle;
+}
+
+if (keyboard_check(ord("A"))) 
+{
+	x += -1.5;
+	//image_index = facing + walkCycle;
+}
+
 
 // Facing
 
@@ -72,14 +71,7 @@ else
 }
 
 image_index = walk + (2*holding)
-/*
-if objM_backpack.isMovingToSurf = true
-{
-		obj_dude_1.x = objT_cave.x;
-		obj_dude_1.y = objT_cave.y + 20;
-		objM_backpack.isMovingToSurf = false;
-}
-*/
+
 // Attack
 
 direction = point_direction(x,y,mouse_x,mouse_y);

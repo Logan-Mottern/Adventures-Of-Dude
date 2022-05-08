@@ -1,3 +1,1 @@
-inMenu = false;
-isMovingToSurf = false;
 
