@@ -1,8 +1,11 @@
-if obj_ladder.y > y
+with other
 {
-	y += 40 ;
-}
-else
-{
-	y -= 40;
+	if y > obj_dude_1.y
+	{
+		obj_dude_1.y += 40 ;
+	}
+	else
+	{
+		obj_dude_1.y -= 40;
+	}
 }

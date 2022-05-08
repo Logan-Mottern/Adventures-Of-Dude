@@ -29,7 +29,7 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0
 	repeat (WFpellets)
 	{
 		object_set_sprite(obj_bullet,WFammo)
-		instance_create_layer(x, y, "Enemys", obj_bullet);
+		instance_create_layer(x, y, "Weapons", obj_bullet);
 	}
 	
 	//Type Based Noise

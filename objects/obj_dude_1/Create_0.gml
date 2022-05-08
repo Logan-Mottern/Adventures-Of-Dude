@@ -1,8 +1,6 @@
 image_xscale = 1;
 image_yscale = 1;
-walkCycleTimer = 1;
 walkCycle = 0;
-walkCycleSpeed = 10;
 left = false;
 justHit = false;
 imageCycleHit = 0;
