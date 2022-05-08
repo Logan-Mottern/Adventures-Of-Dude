@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Weapon Objects",
-    "path": "folders/Objects/Interactive Objects/Menu Objects/Weapon Objects.yy",
+    "path": "folders/Objects/Weapon Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_bullet",
