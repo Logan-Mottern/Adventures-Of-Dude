@@ -14,6 +14,7 @@
     {"id":{"name":"sprI_ore","path":"sprites/sprI_ore/sprI_ore.yy",},"order":0,},
     {"id":{"name":"spr_blue_slime","path":"sprites/spr_blue_slime/spr_blue_slime.yy",},"order":8,},
     {"id":{"name":"scr_effects","path":"scripts/scr_effects/scr_effects.yy",},"order":0,},
+    {"id":{"name":"obj_home","path":"objects/obj_home/obj_home.yy",},"order":13,},
     {"id":{"name":"obj_blue_slime_splatter","path":"objects/obj_blue_slime_splatter/obj_blue_slime_splatter.yy",},"order":6,},
     {"id":{"name":"obj_tree_canopy","path":"objects/obj_tree_canopy/obj_tree_canopy.yy",},"order":7,},
     {"id":{"name":"sprB_diagonal_3","path":"sprites/sprB_diagonal_3/sprB_diagonal_3.yy",},"order":3,},
