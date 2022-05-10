@@ -1,5 +1,9 @@
 with (other)
 {
 	justHit = true;
-	instance_destroy();
+	if justHitCooldown <= 0
+	{
+		dudehp -= 1;
+	}
 }
+instance_destroy();

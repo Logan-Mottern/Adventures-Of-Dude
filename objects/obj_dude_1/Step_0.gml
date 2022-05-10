@@ -70,8 +70,14 @@ else
 	walk = 0;
 }
 
-image_index = walk + (2*holding)
-
+if justHitCooldown <= 0
+{
+	image_index = walk + (2*holding)
+}
+else
+{
+	image_index = walk + (2*holding) + 4
+}
 // Attack
 
 direction = point_direction(x,y,mouse_x,mouse_y);
@@ -80,7 +86,6 @@ direction = point_direction(x,y,mouse_x,mouse_y);
 
 if justHit != false && justHitCooldown <= 0
 {
-	dudehp = dudehp - 1;
 	justHitCooldown = 15;
 }
 
