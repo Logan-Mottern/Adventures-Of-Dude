@@ -28,13 +28,7 @@ imageCycleTrigger = imageCycleTrigger + 1
 if justHit = true
 {
 	image_index = image_index + 3;
-	imageCycleHit = 5;
 	justHit = false;
-}
-
-if imageCycleHit > 0
-{
-	imageCycleHit = imageCycleHit - 1;
 }
 
 // Movement
