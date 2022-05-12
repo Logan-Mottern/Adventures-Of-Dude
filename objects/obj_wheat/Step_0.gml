@@ -1,4 +1,4 @@
-if (obj_dude_1.y + 4 > y)
+if (obj_dude_1.y + 9 > y)
 {
 	layer = layer_get_id("Behind");
 }
