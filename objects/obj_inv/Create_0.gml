@@ -7,3 +7,4 @@ inv[1] = 0;
 inv[2] = 1;
 display_set_gui_size(384,216);
 
+

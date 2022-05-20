@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Weapon Group 3",
-    "path": "folders/Sprites/Weapon Sprites/Weapon Group 3.yy",
+    "name": "Weapon Sprites",
+    "path": "folders/Sprites/Weapon Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bullet_3",

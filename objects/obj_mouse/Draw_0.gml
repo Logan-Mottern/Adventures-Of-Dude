@@ -1,3 +1,4 @@
+/*
 if (itemDrag != -1)
 {
 	draw_set_alpha(0.5);
