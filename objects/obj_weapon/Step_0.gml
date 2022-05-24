@@ -24,29 +24,62 @@ if obj_dude_1.left = true
 
 //Shooting
 
-if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0
+if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && burst = 0
 {
-	repeat (WFpellets)
+	//Type Affects
+	if WFtype = 0
 	{
-		object_set_sprite(obj_bullet,WFammo)
-		instance_create_layer(x, y, "Weapons", obj_bullet);
+		repeat (WFpellets)
+		{
+			object_set_sprite(obj_bullet,WFammo)
+			instance_create_layer(x, y, "Weapons", obj_bullet);
+		}
+		
+		if random_range(0,1) = 0
+		{
+			audio_play_sound(aud_weapon_fire_1,0,0);
+		}
+		else
+		{
+			audio_play_sound(aud_weapon_fire_2,0,0);
+		}
+		ammo -= 1;
 	}
 	
-	//Type Based Noise
-	if random_range(0,1) = 0
+	if WFtype = 1
 	{
-		audio_play_sound(aud_weapon_fire_1,0,0);
-	}
-	else
-	{
-		audio_play_sound(aud_weapon_fire_2,0,0);
+		burst = WFpellets;
 	}
 	
 	cooldown = WFcooldown;
-	ammo -= 1
 }
 cooldown = cooldown - 1;
 
+//Burst
+if burst > 0 
+{
+	if burstDelay = 0
+	{
+		object_set_sprite(obj_bullet,WFammo)
+		instance_create_layer(x, y, "Weapons", obj_bullet);
+		burst -= 1;
+		ammo -= 1;
+		burstDelay = 5;
+		
+		if random_range(0,1) = 0
+		{
+			audio_play_sound(aud_weapon_fire_1,0,0);
+		}
+		else
+		{
+			audio_play_sound(aud_weapon_fire_2,0,0);
+		}
+	}
+	else
+	{
+	burstDelay -= 1;
+	}
+}
 //Cooldown
 
 if cooldown > 0 && ammo != 0

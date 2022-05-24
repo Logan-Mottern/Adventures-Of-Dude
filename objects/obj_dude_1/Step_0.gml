@@ -130,13 +130,13 @@ if type = 1
 	//Single
 	if (keyboard_check(ord("1"))) activeWeapon(spr_st_single,spr_bullet,0,45,1,1,1,9,5,5,0,0,0,0);
 	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon(spr_st_burst,spr_bullet,5,90,8,4,1,49,3,5,0,0,1,0,);
+	if (keyboard_check(ord("2"))) activeWeapon(spr_st_burst,spr_bullet,30,90,8,4,2,49,3,5,0,0,1,0);
 	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon(spr_st_light,spr_bullet,5,90,20,5,1,16,2,5,0,0,0,0,);
+	if (keyboard_check(ord("3"))) activeWeapon(spr_st_light,spr_bullet,5,90,20,5,1,16,2,5,0,0,0,0);
 	//Auto H
 	if (keyboard_check(ord("4"))) activeWeapon(spr_st_heavy,spr_bullet,8,180,50,6,1,17,3,5,0,0,0,0);
 	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon(spr_st_rifle,spr_bullet,45,90,4,0,1,1,5,7,0,0,0,0,);
+	if (keyboard_check(ord("5"))) activeWeapon(spr_st_rifle,spr_bullet,45,90,4,0,1,1,5,7,0,0,0,0);
 	//Inf
 	if (keyboard_check(ord("6"))) activeWeapon();
 }
