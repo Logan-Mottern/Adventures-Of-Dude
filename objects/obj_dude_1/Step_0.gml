@@ -119,7 +119,7 @@ if (keyboard_check(ord("J"))) type = 4;
 if (keyboard_check(ord("K"))) type = 5;
 if (keyboard_check(ord("L"))) type = 6;
 
-if (keyboard_check(ord("q")))
+if (keyboard_check(ord("Q")))
 {
 	instance_destroy(obj_weapon);
 }

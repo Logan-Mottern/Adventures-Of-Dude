@@ -4,7 +4,6 @@
     {"id":{"name":"spr_sec_shot","path":"sprites/spr_sec_shot/spr_sec_shot.yy",},"order":1,},
     {"id":{"name":"ts_tiles_16px","path":"tilesets/ts_tiles_16px/ts_tiles_16px.yy",},"order":1,},
     {"id":{"name":"objB_axial_2","path":"objects/objB_axial_2/objB_axial_2.yy",},"order":6,},
-    {"id":{"name":"objI_ore","path":"objects/objI_ore/objI_ore.yy",},"order":0,},
     {"id":{"name":"spr_sh_heavy","path":"sprites/spr_sh_heavy/spr_sh_heavy.yy",},"order":2,},
     {"id":{"name":"spr_tree_canopy","path":"sprites/spr_tree_canopy/spr_tree_canopy.yy",},"order":17,},
     {"id":{"name":"spr_el_heavy","path":"sprites/spr_el_heavy/spr_el_heavy.yy",},"order":0,},
