@@ -21,7 +21,73 @@ if obj_dude_1.left = true
 		image_angle = obj_dude_1.direction + 180;
 	}
 }
-
+//List of ammo types and associated type Values
+	if ammo = 0 //Light Standerd
+	{
+		if cycle = 0 
+		{
+			//Normal
+		}
+		if cycle = 1 
+		{
+			//Flame
+		}
+	}
+	if ammo = 1 //Shotgun
+	{
+		if cycle = 0 
+		{
+			//Normal
+		}
+		if cycle = 1 
+		{
+			//Flame
+		}
+		if cycle = 2 
+		{
+			//Slug
+		}
+	}
+	if ammo = 2 //Energy
+	{
+		if cycle = 0 
+		{
+			//Normal
+		}
+	}
+	if ammo = 3 //Elemental
+	{
+		if cycle = 0 
+		{
+			//Normal
+		}
+	}
+	if ammo = 4 //Light Explosive
+	{
+		if cycle = 0 
+		{
+			//Normal
+		}
+		if cycle = 1 
+		{
+			//Fragment
+		}
+	}
+	if ammo = 5 //Heavy Explosive
+	{
+		if cycle = 0 
+		{
+			//Normal
+		}
+		if cycle = 1 
+		{
+			//Fragment
+		}
+		if cycle = 2
+		{
+			//Flame
+		}
+	}
 //Shooting
 
 if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && burst = 0

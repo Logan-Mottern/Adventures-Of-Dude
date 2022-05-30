@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin,_damage,_speed,_falloff,_lifetime,_type,_tier)
 {
 	if instance_exists(obj_weapon)
@@ -29,3 +27,20 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 	}
 }
 
+function ammo_drop(_x,_y,_quantity,_rarity,_special)
+{
+	repeat(_quantity)
+	{
+		instance_create_layer(_x,_y,layer,obj_ammoDrop);
+	}
+	with obj_ammoDrop
+	{
+		rarity = _rarity;
+		special = _special;
+	}
+}
+	
+/*
+function ammo_add(_type,_quantity)
+{
+	
