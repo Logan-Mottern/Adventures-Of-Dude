@@ -31,9 +31,9 @@ function ammo_drop(_x,_y,_quantity,_rarity,_special)
 {
 	repeat(_quantity)
 	{
-		instance_create_layer(_x,_y,layer,obj_ammoDrop);
+		instance_create_layer(_x,_y,"enemys",obj_ammoDrop);
 	}
-	with obj_ammoDrop
+	with obj_dev
 	{
 		rarity = _rarity;
 		special = _special;
