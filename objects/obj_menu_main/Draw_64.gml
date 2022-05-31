@@ -1,6 +1,7 @@
 //Settings
 draw_set_font(fnt_pixel);
 var _mainTextY = 5;
+var _secondTextY = 5;
 var _mainW = 52;
 var _secondW = 52;
 
@@ -44,7 +45,7 @@ draw_sprite_stretched
 	}
 	
 //Draw the second menu
-var _secondI = 4
+var _secondI = 23
 if keyboard_check(vk_tab)
 {
 	draw_sprite_stretched
@@ -56,8 +57,51 @@ if keyboard_check(vk_tab)
 		_secondW, //Width
 		5*_secondI + 7 //Height
 		);
+//Ammo
+
+//Standerd
+	draw_text(_mainW+6,_secondTextY,"STANDERD ");
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_St_N));
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Flame  : " + string(ammo_St_F));
+	_secondTextY += 10;
+//Shotgun
+	draw_text(_mainW+6,_secondTextY,"SHOTGUN ");
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_Sh_N));
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Flame  : " + string(ammo_Sh_F));
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Slug   : " + string(ammo_Sh_S));
+	_secondTextY += 10;
+//Energy
+	draw_text(_mainW+6,_secondTextY,"ENERGY ");
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_En_N));
+	_secondTextY += 10;
+//Elemental
+	draw_text(_mainW+6,_secondTextY,"ELEMENTAL ");
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_El_N));
+	_secondTextY += 10;
+//Light Explosive
+	draw_text(_mainW+6,_secondTextY,"LIGHT EXPLO ");
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_Le_N));
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Frag   : " + string(ammo_Le_Fr));
+	_secondTextY += 10;
+//Heavy Explosive
+	draw_text(_mainW+6,_secondTextY,"HEAVY EXPLO ");
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_He_N));
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Frag   : " + string(ammo_He_Fr));
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Flame  : " + string(ammo_He_F));
+	_secondTextY += 5;	
 }
-//List of ammo types and associated type Values
-	/*
+
 	
 

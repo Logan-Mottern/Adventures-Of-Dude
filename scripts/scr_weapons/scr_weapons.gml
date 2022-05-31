@@ -39,8 +39,7 @@ function ammo_drop(_x,_y,_quantity,_rarity,_special)
 		special = _special;
 	}
 }
-	
 /*
 function ammo_add(_type,_quantity)
 {
-	
+	with obj_menu_main

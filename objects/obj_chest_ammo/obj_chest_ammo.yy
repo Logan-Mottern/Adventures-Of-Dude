@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "spr_ammoDrop",
-    "path": "sprites/spr_ammoDrop/spr_ammoDrop.yy",
+    "name": "spr_chest_basic_ammo",
+    "path": "sprites/spr_chest_basic_ammo/spr_chest_basic_ammo.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -21,17 +21,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_dude_1","path":"objects/obj_dude_1/obj_dude_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Item Objects",
-    "path": "folders/Objects/Interactive Objects/Item Objects.yy",
+    "name": "Interactive Objects",
+    "path": "folders/Objects/Interactive Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_ammoDrop",
+  "name": "obj_chest_ammo",
   "tags": [],
   "resourceType": "GMObject",
 }
