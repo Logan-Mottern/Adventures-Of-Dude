@@ -43,3 +43,12 @@ function ammo_drop(_x,_y,_quantity,_rarity,_special)
 function ammo_add(_type,_quantity)
 {
 	with obj_menu_main
+*/
+//Break
+function healthbar(_x,_y,_health,_healthMax)
+{
+	if _health != _healthMax
+	{
+		draw_sprite(spr_healthBar,(13*_health)/_healthMax,_x,_y);
+	}
+}

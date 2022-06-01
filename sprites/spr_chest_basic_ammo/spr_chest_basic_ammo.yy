@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 3,
   "bbox_right": 12,
-  "bbox_top": 6,
+  "bbox_top": 3,
   "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 8,
-  "gridY": 8,
+  "gridX": 4,
+  "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"a48b20d7-705a-4482-8d54-3199103c368b","path":"sprites/spr_chest_basic_ammo/spr_chest_basic_ammo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a48b20d7-705a-4482-8d54-3199103c368b","path":"sprites/spr_chest_basic_ammo/spr_chest_basic_ammo.yy",},"LayerId":{"name":"4524316d-02dd-49ed-b193-e1a0b3fa689a","path":"sprites/spr_chest_basic_ammo/spr_chest_basic_ammo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
