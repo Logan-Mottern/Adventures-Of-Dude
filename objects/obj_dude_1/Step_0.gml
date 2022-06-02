@@ -129,15 +129,15 @@ if (keyboard_check(ord("Q")))
 if type = 1
 {
 	//Single
-	if (keyboard_check(ord("1"))) activeWeapon(spr_st_single,spr_bullet,0,45,1,1,1,9,5,5,0,0,0,0);
+	if (keyboard_check(ord("1"))) activeWeapon(spr_st_single,"ammo_St_N",0,45,1,1,1,9,4,5,0,0,0,0);
 	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon(spr_st_burst,spr_bullet,30,90,8,4,2,49,3,5,0,0,1,0);
+	if (keyboard_check(ord("2"))) activeWeapon(spr_st_burst,"ammo_St_N",30,90,8,4,2,49,3,5,0,0,1,0);
 	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon(spr_st_light,spr_bullet,5,90,20,5,1,16,2,5,0,0,0,0);
+	if (keyboard_check(ord("3"))) activeWeapon(spr_st_light,"ammo_St_N",5,90,20,5,1,16,2,5,0,0,0,0);
 	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon(spr_st_heavy,spr_bullet,8,180,50,6,1,17,3,5,0,0,0,0);
+	if (keyboard_check(ord("4"))) activeWeapon(spr_st_heavy,"ammo_St_N",8,180,50,6,1,17,3,5,0,0,0,0);
 	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon(spr_st_rifle,spr_bullet,45,90,4,0,1,1,5,7,0,0,0,0);
+	if (keyboard_check(ord("5"))) activeWeapon(spr_st_rifle,"ammo_St_N",45,90,4,0,1,1,5,7,0,0,0,0);
 	//Inf
 	if (keyboard_check(ord("6"))) activeWeapon();
 }
@@ -209,7 +209,7 @@ if type = 5
 if type = 6
 {
 	//Single
-	if (keyboard_check(ord("1"))) activeWeapon(spr_he_single,spr_bullet_explo_1,0,60,1,3,1,13,10,3,0.02,300,2,0);
+	if (keyboard_check(ord("1"))) activeWeapon(spr_he_single,"ammo_He_N",0,60,1,3,1,13,10,3,0.02,300,2,0);
 	//Burst
 	if (keyboard_check(ord("2"))) activeWeapon();
 	//Auto L
@@ -245,7 +245,7 @@ if type = 7
 	//Shotgun
 	if (keyboard_check(ord("0"))) activeWeapon();
 }
-if (keyboard_check(ord("G")))
-{
-	activeWeapon(spr_dude_1,spr_dude_1,0,90,360,180,360,1,5,2,0,0,0,0);
-}
+
+//Dev Tools
+
+if (keyboard_check(ord("N"))) ammo_drop(x,y,10,1,1);

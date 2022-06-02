@@ -23,7 +23,6 @@ reloadAnimationTimer = 0;
 burst = 0;
 burstDelay = 0;
 ammo = 0;
-cycle = 0;
 
 
 

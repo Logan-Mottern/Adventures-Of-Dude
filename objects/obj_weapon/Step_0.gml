@@ -21,83 +21,28 @@ if obj_dude_1.left = true
 		image_angle = obj_dude_1.direction + 180;
 	}
 }
-//List of ammo types and associated type Values
-	if ammo = 0 //Light Standerd
-	{
-		if cycle = 0 
-		{
-			//Normal
-		}
-		if cycle = 1 
-		{
-			//Flame
-		}
-	}
-	if ammo = 1 //Shotgun
-	{
-		if cycle = 0 
-		{
-			//Normal
-		}
-		if cycle = 1 
-		{
-			//Flame
-		}
-		if cycle = 2 
-		{
-			//Slug
-		}
-	}
-	if ammo = 2 //Energy
-	{
-		if cycle = 0 
-		{
-			//Normal
-		}
-	}
-	if ammo = 3 //Elemental
-	{
-		if cycle = 0 
-		{
-			//Normal
-		}
-	}
-	if ammo = 4 //Light Explosive
-	{
-		if cycle = 0 
-		{
-			//Normal
-		}
-		if cycle = 1 
-		{
-			//Fragment
-		}
-	}
-	if ammo = 5 //Heavy Explosive
-	{
-		if cycle = 0 
-		{
-			//Normal
-		}
-		if cycle = 1 
-		{
-			//Fragment
-		}
-		if cycle = 2
-		{
-			//Flame
-		}
-	}
-//Shooting
+//Ammo System
 
+	//Define the bullet
+	if WFammo = "ammo_St_N"
+	{
+		object_set_sprite(obj_bullet,spr_bullet);
+		var _total = obj_menu_main.ammo_St_N
+	}
+	if WFammo = "ammo_He_N"
+	{
+		object_set_sprite(obj_bullet,spr_bullet_explo_1);
+		var _total = obj_menu_main.ammo_He_N
+	}
+
+//Shooting
 if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && burst = 0
-{
+{ 
 	//Type Affects
 	if WFtype = 0
 	{
 		repeat (WFpellets)
 		{
-			object_set_sprite(obj_bullet,WFammo)
 			instance_create_layer(x, y, "Weapons", obj_bullet);
 		}
 		
@@ -121,7 +66,6 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 
 	{
 		repeat (WFpellets)
 		{
-			object_set_sprite(obj_bullet,WFammo)
 			instance_create_layer(x, y, "Weapons", obj_bullet);
 		}	
 		ammo -= 1;
@@ -136,7 +80,6 @@ if burst > 0
 {
 	if burstDelay = 0
 	{
-		object_set_sprite(obj_bullet,WFammo)
 		instance_create_layer(x, y, "Weapons", obj_bullet);
 		burst -= 1;
 		ammo -= 1;
@@ -176,9 +119,8 @@ if cooldown <= 0 && ammo != 0
 }
 //Reload
 
-if ammo = 0
+if ammo = 0 && _total >= WFcapacity
 {
-	
 	if reload = 0 
 	{
 		audio_play_sound(aud_weapon_click,0,0);
@@ -208,6 +150,10 @@ if ammo = 0
 	{
 		ammo = WFcapacity;
 		reload = 0;
+		
+		//Subtract the ammo from the corret variable
+		if WFammo = "ammo_St_N" obj_menu_main.ammo_St_N -= WFcapacity;
+		if WFammo = "ammo_He_N" obj_menu_main.ammo_He_N -= WFcapacity;
 	}
 }
 
