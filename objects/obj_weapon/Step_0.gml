@@ -117,6 +117,16 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 
 		burst = WFpellets;
 	}
 	
+	if WFtype = 2
+	{
+		repeat (WFpellets)
+		{
+			object_set_sprite(obj_bullet,WFammo)
+			instance_create_layer(x, y, "Weapons", obj_bullet);
+		}	
+		ammo -= 1;
+	}
+	
 	cooldown = WFcooldown;
 }
 cooldown = cooldown - 1;

@@ -118,6 +118,7 @@ if (keyboard_check(ord("P"))) type = 3;
 if (keyboard_check(ord("J"))) type = 4;
 if (keyboard_check(ord("K"))) type = 5;
 if (keyboard_check(ord("L"))) type = 6;
+if (keyboard_check(ord(";"))) type = 7;
 
 if (keyboard_check(ord("Q")))
 {
@@ -206,6 +207,22 @@ if type = 5
 }
 
 if type = 6
+{
+	//Single
+	if (keyboard_check(ord("1"))) activeWeapon(spr_he_single,spr_bullet_explo_1,0,60,1,3,1,13,10,3,0.02,300,2,0);
+	//Burst
+	if (keyboard_check(ord("2"))) activeWeapon();
+	//Auto L
+	if (keyboard_check(ord("3"))) activeWeapon();
+	//Auto H
+	if (keyboard_check(ord("4"))) activeWeapon();
+	//Rifle
+	if (keyboard_check(ord("5"))) activeWeapon();
+	//Inf
+	if (keyboard_check(ord("6"))) activeWeapon();
+}
+
+if type = 7
 {
 	//Single
 	if (keyboard_check(ord("1"))) activeWeapon();

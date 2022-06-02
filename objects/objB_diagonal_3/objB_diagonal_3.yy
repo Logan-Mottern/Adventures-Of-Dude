@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemys",
-    "path": "folders/Objects/Enemys.yy",
+    "name": "Boundries Objects",
+    "path": "folders/Objects/Boundries Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "objB_diagonal_3",

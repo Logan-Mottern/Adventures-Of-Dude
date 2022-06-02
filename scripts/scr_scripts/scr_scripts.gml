@@ -27,6 +27,19 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 	}
 }
 
+function explosion(_x,_y,_type,_damage)
+{
+	if _type = 0 object_set_sprite(obj_explosion,spr_explosion_large);
+	
+	instance_create_layer(_x,_y,"Weapons",obj_explosion);
+	
+	with obj_explosion
+	{
+		damage = _damage;
+		type = _type;
+	}
+}
+
 function ammo_drop(_x,_y,_quantity,_rarity,_special)
 {
 	repeat(_quantity)
@@ -52,3 +65,5 @@ function healthbar(_x,_y,_health,_healthMax)
 		draw_sprite(spr_healthBar,(13*_health)/_healthMax,_x,_y);
 	}
 }
+
+
