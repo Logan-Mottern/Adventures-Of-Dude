@@ -1,3 +1,5 @@
+audio_play_sound(aud_weapon_click,0,0);
+
 //Standerd
 if image_index = 0 
 {

@@ -47,7 +47,7 @@ function ammo_add(_type,_quantity)
 //Break
 function healthbar(_x,_y,_health,_healthMax)
 {
-	if _health != _healthMax
+	if _health != _healthMax && _health != 0
 	{
 		draw_sprite(spr_healthBar,(13*_health)/_healthMax,_x,_y);
 	}
