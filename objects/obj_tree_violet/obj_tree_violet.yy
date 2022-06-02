@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprB_diagonal_3",
-    "path": "sprites/sprB_diagonal_3/sprB_diagonal_3.yy",
+    "name": "spr_tile_tree_violet",
+    "path": "sprites/spr_tile_tree_violet/spr_tile_tree_violet.yy",
   },
   "solid": true,
   "visible": false,
@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemys",
-    "path": "folders/Objects/Enemys.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objB_diagonal_3",
+  "name": "obj_tree_violet",
   "tags": [],
   "resourceType": "GMObject",
 }

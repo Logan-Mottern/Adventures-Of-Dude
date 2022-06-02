@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "sprB_diagonal_3",
-    "path": "sprites/sprB_diagonal_3/sprB_diagonal_3.yy",
+    "name": "spr_tree_trunk_violet",
+    "path": "sprites/spr_tree_trunk_violet/spr_tree_trunk_violet.yy",
   },
-  "solid": true,
-  "visible": false,
+  "solid": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemys",
-    "path": "folders/Objects/Enemys.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objB_diagonal_3",
+  "name": "obj_tree_trunk_violet",
   "tags": [],
   "resourceType": "GMObject",
 }
