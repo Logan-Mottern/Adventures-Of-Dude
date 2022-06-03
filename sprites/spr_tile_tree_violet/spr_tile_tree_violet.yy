@@ -22,7 +22,7 @@
   },
   "swatchColours": null,
   "gridX": 8,
-  "gridY": 8,
+  "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"7dc30a28-33ca-48d0-b4a4-564922d4e36f","path":"sprites/spr_tile_tree_violet/spr_tile_tree_violet.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"7dc30a28-33ca-48d0-b4a4-564922d4e36f","path":"sprites/spr_tile_tree_violet/spr_tile_tree_violet.yy",},"LayerId":{"name":"16eac111-279f-4e44-bb97-7ee670d278e7","path":"sprites/spr_tile_tree_violet/spr_tile_tree_violet.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

@@ -2,8 +2,8 @@
 draw_set_font(fnt_pixel);
 var _mainTextY = 5;
 var _secondTextY = 5;
-var _mainW = 52;
-var _secondW = 52;
+var _mainW = 51;
+var _secondW = 54;
 
 //Draw the Menu
 var _mainI = 1;
@@ -62,44 +62,44 @@ if keyboard_check(vk_tab)
 //Standerd
 	draw_text(_mainW+6,_secondTextY,"STANDERD ");
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_St_N));
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.St.norm));
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Flame  : " + string(ammo_St_F));
+	draw_text(_mainW+6,_secondTextY," Flame  : " + string(inv.ammo.St.flame));
 	_secondTextY += 10;
 //Shotgun
 	draw_text(_mainW+6,_secondTextY,"SHOTGUN ");
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_Sh_N));
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.Sh.norm));
+	_secondTextY += 5
+	draw_text(_mainW+6,_secondTextY," Flame  : " + string(inv.ammo.Sh.flame));
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Flame  : " + string(ammo_Sh_F));
-	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Slug   : " + string(ammo_Sh_S));
+	draw_text(_mainW+6,_secondTextY," Slug   : " + string(inv.ammo.Sh.slug));
 	_secondTextY += 10;
 //Energy
 	draw_text(_mainW+6,_secondTextY,"ENERGY ");
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_En_N));
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.En.norm));
 	_secondTextY += 10;
 //Elemental
 	draw_text(_mainW+6,_secondTextY,"ELEMENTAL ");
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_El_N));
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.El.norm));
 	_secondTextY += 10;
 //Light Explosive
 	draw_text(_mainW+6,_secondTextY,"LIGHT EXPLO ");
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_Le_N));
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.Le.norm));
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Frag   : " + string(ammo_Le_Fr));
+	draw_text(_mainW+6,_secondTextY," Frag   : " + string(inv.ammo.Le.frag));
 	_secondTextY += 10;
 //Heavy Explosive
 	draw_text(_mainW+6,_secondTextY,"HEAVY EXPLO ");
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Normal : " + string(ammo_He_N));
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.He.norm));
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Frag   : " + string(ammo_He_Fr));
+	draw_text(_mainW+6,_secondTextY," Frag   : " + string(inv.ammo.He.frag));
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Flame  : " + string(ammo_He_F));
+	draw_text(_mainW+6,_secondTextY," Flame  : " + string(inv.ammo.He.flame));
 	_secondTextY += 5;	
 }
 
