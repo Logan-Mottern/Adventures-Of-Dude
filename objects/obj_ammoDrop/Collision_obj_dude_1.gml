@@ -24,4 +24,5 @@ if image_index = 20 obj_menu_main.inv.ammo.He.frag += 1;
 if image_index = 21 obj_menu_main.inv.ammo.He.frag += 3;
 if image_index = 22 obj_menu_main.inv.ammo.He.flame += 1;
 if image_index = 23 obj_menu_main.inv.ammo.He.flame += 3;
+
 instance_destroy();
