@@ -1,9 +1,9 @@
 audio_play_sound(aud_weapon_click,0,0);
 
-if image_index = 0 obj_menu_main.inv.ammo.St.norm += 1;
-if image_index = 1 obj_menu_main.inv.ammo.St.norm += 3;
-if image_index = 2 obj_menu_main.inv.ammo.St.flame += 1;
-if image_index = 3 obj_menu_main.inv.ammo.St.flame += 3;
+if image_index = 0 obj_menu_main.inv.ammo.St.norm += 3;
+if image_index = 1 obj_menu_main.inv.ammo.St.norm += 12;
+if image_index = 2 obj_menu_main.inv.ammo.St.flame += 3;
+if image_index = 3 obj_menu_main.inv.ammo.St.flame += 12;
 if image_index = 4 obj_menu_main.inv.ammo.Sh.norm += 1;
 if image_index = 5 obj_menu_main.inv.ammo.Sh.norm += 3;
 if image_index = 6 obj_menu_main.inv.ammo.Sh.flame += 1;

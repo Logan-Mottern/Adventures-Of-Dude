@@ -60,7 +60,6 @@
     {"id":{"name":"spr_decal_fragment","path":"sprites/spr_decal_fragment/spr_decal_fragment.yy",},"order":16,},
     {"id":{"name":"spr_darkness","path":"sprites/spr_darkness/spr_darkness.yy",},"order":5,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":14,},
-    {"id":{"name":"spr_tiles_32px","path":"sprites/spr_tiles_32px/spr_tiles_32px.yy",},"order":0,},
     {"id":{"name":"spr_el_light","path":"sprites/spr_el_light/spr_el_light.yy",},"order":1,},
     {"id":{"name":"spr_thorn","path":"sprites/spr_thorn/spr_thorn.yy",},"order":3,},
     {"id":{"name":"obj_menu_main","path":"objects/obj_menu_main/obj_menu_main.yy",},"order":1,},

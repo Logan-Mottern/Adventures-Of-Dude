@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_tiles_32px",
-    "path": "sprites/spr_tiles_32px/spr_tiles_32px.yy",
-  },
+  "spriteId": null,
   "tileWidth": 32,
   "tileHeight": 32,
   "tilexoff": 0,
