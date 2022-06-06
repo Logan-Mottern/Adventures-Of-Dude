@@ -27,12 +27,12 @@ if obj_dude_1.left = true
 	if WFammo = "ammo_St_N"
 	{
 		object_set_sprite(obj_bullet,spr_bullet);
-		var _total = obj_menu_main.ammo_St_N
+		var _total = obj_menu_main.inv.ammo.St.norm
 	}
 	if WFammo = "ammo_He_N"
 	{
 		object_set_sprite(obj_bullet,spr_bullet_explo_1);
-		var _total = obj_menu_main.ammo_He_N
+		var _total = obj_menu_main.inv.ammo.He.norm
 	}
 
 //Shooting
@@ -152,8 +152,8 @@ if ammo = 0 && _total >= WFcapacity
 		reload = 0;
 		
 		//Subtract the ammo from the corret variable
-		if WFammo = "ammo_St_N" obj_menu_main.ammo_St_N -= WFcapacity;
-		if WFammo = "ammo_He_N" obj_menu_main.ammo_He_N -= WFcapacity;
+		if WFammo = "ammo_St_N" obj_menu_main.inv.ammo.St.norm -= WFcapacity;
+		if WFammo = "ammo_He_N" obj_menu_main.inv.ammo.He.norm -= WFcapacity;
 	}
 }
 
