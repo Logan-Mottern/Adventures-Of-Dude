@@ -32,6 +32,7 @@
     {"id":{"name":"sprB_axial_2","path":"sprites/sprB_axial_2/sprB_axial_2.yy",},"order":5,},
     {"id":{"name":"spr_sec_ener","path":"sprites/spr_sec_ener/spr_sec_ener.yy",},"order":2,},
     {"id":{"name":"obj_darkness","path":"objects/obj_darkness/obj_darkness.yy",},"order":3,},
+    {"id":{"name":"spr_dude_2","path":"sprites/spr_dude_2/spr_dude_2.yy",},"order":27,},
     {"id":{"name":"aud_weapon_click","path":"sounds/aud_weapon_click/aud_weapon_click.yy",},"order":1,},
     {"id":{"name":"objB_diagonal_4","path":"objects/objB_diagonal_4/objB_diagonal_4.yy",},"order":0,},
     {"id":{"name":"spr_he_single","path":"sprites/spr_he_single/spr_he_single.yy",},"order":0,},

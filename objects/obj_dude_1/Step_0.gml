@@ -14,8 +14,36 @@ vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 
 collision();
 
-// Facing
+//New facing
 
+if keyDown = keyboard_check(ord("S")) or keyUp = keyboard_check(ord("W")) or keyRight = keyboard_check(ord("D")) or keyLeft = keyboard_check(ord("A"))
+{
+	stepTimer -= 1;
+}
+
+if stepTimer <= 0 && step = 1
+{
+	step = 0;
+	stepTimer = 10;
+}
+
+if stepTimer <= 0 && step = 0
+{
+	step = 1;
+	stepTimer = 10;
+}
+
+if inputDirection = 0 image_index = 0 + (4 * step)
+if inputDirection = 45 image_index = 0 + (4 * step)
+if inputDirection = 90 image_index = 1 + (4 * step)
+if inputDirection = 135 image_index = 2 + (4 * step)
+if inputDirection = 180 image_index = 2 + (4 * step)
+if inputDirection = 225 image_index = 2 + (4 * step)
+if inputDirection = 270 image_index = 3 + (4 * step)
+if inputDirection = 315 image_index = 0 + (4 * step)
+
+// Facing
+/*
 if (direction > 90) && (direction < 270)
 {
 	image_xscale = -1
@@ -67,6 +95,7 @@ else
 {
 	image_index = walk + (2*holding) + 4
 }
+*/
 
 // Attack
 
