@@ -1,29 +1,18 @@
- //Movement
+//Movement and Collision from Shaun Spalding's Action RPG
+keyLeft = keyboard_check(ord("A"));
+keyRight = keyboard_check(ord("D"));
+keyUp = keyboard_check(ord("W"));
+keyDown = keyboard_check(ord("S"));
 
-if (keyboard_check(ord("S"))) 
-{
-	y += 1.5;
-	//image_index = facing + walkCycle;
-}	
+inputDirection = point_direction(0,0,keyRight-keyLeft,keyDown-keyUp);
+inputMagnitude = (keyRight - keyLeft != 0) or (keyDown - keyUp != 0);
 
-if (keyboard_check(ord("W"))) 
-{
-	y += -1.5;
-	//image_index = facing + walkCycle;
-}
+//Movement from Shaun Spalding
 
-if (keyboard_check(ord("D")))
-{
-	x += 1.5;
-	//image_index = facing + walkCycle;
-}
+hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
+vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 
-if (keyboard_check(ord("A"))) 
-{
-	x += -1.5;
-	//image_index = facing + walkCycle;
-}
-
+collision();
 
 // Facing
 
@@ -78,6 +67,7 @@ else
 {
 	image_index = walk + (2*holding) + 4
 }
+
 // Attack
 
 direction = point_direction(x,y,mouse_x,mouse_y);
