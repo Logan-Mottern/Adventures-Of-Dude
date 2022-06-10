@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 255,
-  "bbox_top": 0,
+  "bbox_top": 1,
   "bbox_bottom": 255,
   "HTile": false,
   "VTile": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 8,
-  "gridY": 8,
+  "gridX": 16,
+  "gridY": 16,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"63af9a3e-cbd4-458c-a5b2-c9148150ff43","path":"sprites/Sprite50/Sprite50.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"63af9a3e-cbd4-458c-a5b2-c9148150ff43","path":"sprites/Sprite50/Sprite50.yy",},"LayerId":{"name":"f4cb84a8-2335-48fd-bbe8-306dc7ece973","path":"sprites/Sprite50/Sprite50.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

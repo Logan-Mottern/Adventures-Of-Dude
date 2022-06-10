@@ -1,1 +1,1 @@
-#macro colSize 4
+#macro colSize 2
