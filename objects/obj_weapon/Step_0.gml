@@ -1,6 +1,6 @@
 //Angle
 
-y = (obj_dude_1.y) - 0.5;
+y = (obj_dude_1.y) - 5;
 
 if obj_dude_1.left = false
 {
@@ -28,6 +28,16 @@ if obj_dude_1.left = true
 	{
 		object_set_sprite(obj_bullet,spr_bullet);
 		var _total = obj_menu_main.inv.ammo.St.norm
+	}
+	if WFammo = "ammo_Sh_N"
+	{
+		object_set_sprite(obj_bullet,spr_bullet);
+		var _total = obj_menu_main.inv.ammo.Sh.norm
+	}
+	if WFammo = "ammo_En_N"
+	{
+		object_set_sprite(obj_bullet,spr_bullet_E);
+		var _total = obj_menu_main.inv.ammo.En.norm
 	}
 	if WFammo = "ammo_He_N"
 	{
@@ -153,6 +163,8 @@ if ammo = 0 && _total >= WFcapacity
 		
 		//Subtract the ammo from the corret variable
 		if WFammo = "ammo_St_N" obj_menu_main.inv.ammo.St.norm -= WFcapacity;
+		if WFammo = "ammo_Sh_N" obj_menu_main.inv.ammo.Sh.norm -= WFcapacity;
+		if WFammo = "ammo_En_N" obj_menu_main.inv.ammo.En.norm -= WFcapacity;
 		if WFammo = "ammo_He_N" obj_menu_main.inv.ammo.He.norm -= WFcapacity;
 	}
 }

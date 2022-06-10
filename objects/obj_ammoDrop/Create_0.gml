@@ -3,6 +3,8 @@ friction = 0.1;
 direction = random(360);
 image_speed = 0;
 
+collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
+
 var _ammo = 0;
 
 

@@ -1,6 +1,6 @@
 display_set_gui_size(384,216);
 
-//Ammo Variables
+//Inv Variables
 inv =
 {
 	ammo :
@@ -37,3 +37,5 @@ inv =
 		},
 	},
 };
+
+

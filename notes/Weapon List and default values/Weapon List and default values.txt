@@ -1,0 +1,17 @@
+Standerd Weapons
+
+Single		: spr_st_single,"ammo_St_N",0,45,1,1,1,9,4,5,0,0,0,0
+Burst Rifle	: spr_st_burst,"ammo_St_N",30,90,8,4,2,49,3,5,0,0,1,0
+Tommy		: spr_st_light,"ammo_St_N",5,90,20,5,1,16,2,5,0,0,0,0
+Spitfire	: spr_st_heavy,"ammo_St_N",8,180,50,6,1,17,3,5,0,0,0,0
+Snipa		: spr_st_rifle,"ammo_St_N",45,90,4,0,1,1,5,7,0,0,0,0
+ 
+Shotguns
+
+Breaker		: spr_sh_single,"ammo_Sh_N",0,45,1,3,5,5,1,5,0,0,0,0
+Pump		: spr_sh_light,"ammo_Sh_N",20,135,6,3,8,44,0.5,5,0,0,0,0
+Fury		: spr_sh_heavy,"ammo_Sh_N",30,90,3,5,3,1,1.5,5,0,0,0,0
+
+Energy
+
+Energy AR	: spr_en_light,"ammo_En_N",3,45,30,4,1,2,1,7,0,0,0,0

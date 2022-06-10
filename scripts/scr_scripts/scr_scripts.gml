@@ -2,6 +2,11 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 {
 	if instance_exists(obj_weapon)
 	{
+		with obj_weapon
+		{
+			if WFammo = "ammo_St_N" obj_menu_main.inv.ammo.St.norm += ammo;
+			if WFammo = "ammo_He_N" obj_menu_main.inv.ammo.He.norm += ammo;
+		}
 		instance_destroy(obj_weapon);
 	}
 
