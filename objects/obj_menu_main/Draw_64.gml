@@ -103,5 +103,8 @@ if keyboard_check(vk_tab)
 	_secondTextY += 5;	
 }
 
+if obj_emerald.emerald = true statusUpdate("Emerald Collected! Good Job!");
+
+
 	
 

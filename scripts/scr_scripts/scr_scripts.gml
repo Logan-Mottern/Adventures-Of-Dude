@@ -71,4 +71,10 @@ function healthbar(_x,_y,_health,_healthMax)
 	}
 }
 
+function statusUpdate(_string)
+{
+	var _strLength = 4 * string_length(_string);
+	draw_sprite_stretched(spr_menu,0,376-_strLength,1,_strLength+7,12);
+	draw_text(380-_strLength,5,_string);
+}
 
