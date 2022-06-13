@@ -1,10 +1,12 @@
-function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin,_damage,_speed,_falloff,_lifetime,_type,_tier)
+function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin,_damage,_speed,_falloff,_lifetime,_burst,_bTime,_type,_tier)
 {
 	if instance_exists(obj_weapon)
 	{
 		with obj_weapon
 		{
 			if WFammo = "ammo_St_N" obj_menu_main.inv.ammo.St.norm += ammo;
+			if WFammo = "ammo_Sh_N" obj_menu_main.inv.ammo.Sh.norm += ammo;
+			if WFammo = "ammo_En_N" obj_menu_main.inv.ammo.En.norm += ammo;
 			if WFammo = "ammo_He_N" obj_menu_main.inv.ammo.He.norm += ammo;
 		}
 		instance_destroy(obj_weapon);
@@ -29,6 +31,8 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 		WFlifetime = _lifetime;
 		WFtype = _type;
 		WFtier = _tier;
+		WFburst = _burst;
+		WFburstTime = _bTime;
 	}
 }
 

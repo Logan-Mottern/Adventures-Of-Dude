@@ -46,10 +46,10 @@ if obj_dude_1.left = true
 	}
 
 //Shooting
-if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && burst = 0
+if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && burst = 0 
 { 
 	//Type Affects
-	if WFtype = 0
+	if WFtype = 0 && WFburst = 0
 	{
 		repeat (WFpellets)
 		{
@@ -67,9 +67,9 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 
 		ammo -= 1;
 	}
 	
-	if WFtype = 1
+	if WFburst != 0
 	{
-		burst = WFpellets;
+		burst = WFburst;
 	}
 	
 	if WFtype = 2
@@ -88,12 +88,12 @@ cooldown = cooldown - 1;
 //Burst
 if burst > 0 
 {
-	if burstDelay = 0
+	if burstDelay <= 0
 	{
 		instance_create_layer(x, y, "Weapons", obj_bullet);
 		burst -= 1;
 		ammo -= 1;
-		burstDelay = 5;
+		burstDelay = WFburstTime;
 		
 		if random_range(0,1) = 0
 		{

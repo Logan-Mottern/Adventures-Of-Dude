@@ -1,5 +1,9 @@
 display_set_gui_size(384,216);
 
+//Misc Variables
+
+tab = true;
+
 //Inv Variables
 inv =
 {

@@ -11,6 +11,8 @@ WFlifetime = 0;
 WFfalloff = 0;
 WFtype = 0;
 WFtier = 0;
+WFburst = 0;
+WFburstTime = 0;
 WFammo = "none";
 
 image_speed = 0;

@@ -3,7 +3,7 @@ draw_set_font(fnt_pixel);
 var _mainTextY = 5;
 var _secondTextY = 5;
 var _mainW = 51;
-var _secondW = 54;
+var _secondW = 58;
 
 //Draw the Menu
 var _mainI = 1;
@@ -46,6 +46,7 @@ draw_sprite_stretched
 	
 //Draw the second menu
 var _secondI = 23
+
 if keyboard_check(vk_tab)
 {
 	draw_sprite_stretched
@@ -100,11 +101,5 @@ if keyboard_check(vk_tab)
 	draw_text(_mainW+6,_secondTextY," Frag   : " + string(inv.ammo.He.frag));
 	_secondTextY += 5;
 	draw_text(_mainW+6,_secondTextY," Flame  : " + string(inv.ammo.He.flame));
-	_secondTextY += 5;	
+	_secondTextY += 5;
 }
-
-if obj_emerald.emerald = true statusUpdate("Emerald Collected! Good Job!");
-
-
-	
-

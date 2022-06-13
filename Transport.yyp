@@ -88,6 +88,7 @@
     {"id":{"name":"spr_st_heavy","path":"sprites/spr_st_heavy/spr_st_heavy.yy",},"order":1,},
     {"id":{"name":"spr_bullet_E","path":"sprites/spr_bullet_E/spr_bullet_E.yy",},"order":13,},
     {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},"order":4,},
+    {"id":{"name":"spr_en_burst","path":"sprites/spr_en_burst/spr_en_burst.yy",},"order":1,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":1,},
     {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},"order":6,},
     {"id":{"name":"spr_emerald","path":"sprites/spr_emerald/spr_emerald.yy",},"order":1,},
