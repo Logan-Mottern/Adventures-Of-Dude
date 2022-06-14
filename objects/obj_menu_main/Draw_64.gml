@@ -103,3 +103,8 @@ if keyboard_check(vk_tab)
 	draw_text(_mainW+6,_secondTextY," Flame  : " + string(inv.ammo.He.flame));
 	_secondTextY += 5;
 }
+
+if instance_exists(obj_totem)
+{
+	if (obj_totem.totem = true) statusUpdate("Collected Totem!");
+}

@@ -19,9 +19,9 @@ speedWalk = 2;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
-//Temp
+//Random Weapon
 
 randomize();
-weaponRand1 = 5 //irandom(5);
+weaponRand1 = irandom(5);
 weaponRand2 = irandom(3);
 weaponRand3 = irandom(1);

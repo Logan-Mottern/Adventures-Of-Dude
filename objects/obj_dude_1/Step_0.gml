@@ -129,7 +129,7 @@ if (keyboard_check(ord("3")))
 /*
 if (keyboard_check(ord("I"))) type = 1;
 if (keyboard_check(ord("O"))) type = 2;
-if (keyboard_check(ord("P"))) type = 3;
+if (keyboard_check(ord("P"))) type = 3;21
 if (keyboard_check(ord("J"))) type = 4;
 if (keyboard_check(ord("K"))) type = 5;
 if (keyboard_check(ord("L"))) type = 6;
