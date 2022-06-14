@@ -22,7 +22,6 @@ collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 //Temp
 
 randomize();
-weaponRand1 = 1 //irandom(4);
-weaponRand2 = irandom(2);
-weaponRand3 = 0 //irandom(1);
-
+weaponRand1 = 5 //irandom(5);
+weaponRand2 = irandom(3);
+weaponRand3 = irandom(1);

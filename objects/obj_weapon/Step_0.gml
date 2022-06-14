@@ -21,6 +21,7 @@ if obj_dude_1.left = true
 		image_angle = obj_dude_1.direction + 180;
 	}
 }
+
 //Ammo System
 
 	//Define the bullet

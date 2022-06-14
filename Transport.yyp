@@ -16,7 +16,7 @@
     {"id":{"name":"spr_blue_slime","path":"sprites/spr_blue_slime/spr_blue_slime.yy",},"order":8,},
     {"id":{"name":"scr_effects","path":"scripts/scr_effects/scr_effects.yy",},"order":0,},
     {"id":{"name":"obj_decal_fragment","path":"objects/obj_decal_fragment/obj_decal_fragment.yy",},"order":6,},
-    {"id":{"name":"spr_sh_rifle","path":"sprites/spr_sh_rifle/spr_sh_rifle.yy",},"order":3,},
+    {"id":{"name":"spr_sh_burst","path":"sprites/spr_sh_burst/spr_sh_burst.yy",},"order":3,},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":6,},
     {"id":{"name":"obj_tree_canopy","path":"objects/obj_tree_canopy/obj_tree_canopy.yy",},"order":6,},
     {"id":{"name":"obj_tree_canopy_violet","path":"objects/obj_tree_canopy_violet/obj_tree_canopy_violet.yy",},"order":15,},
