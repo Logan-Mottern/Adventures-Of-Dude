@@ -1,10 +1,10 @@
 //Angle
 
-y = (obj_dude_1.y) - 5;
+y = (obj_dude_1.y) - 7;
 
 if obj_dude_1.left = false
 {
-	x = obj_dude_1.x - 3;
+	x = obj_dude_1.x - 4;
 	image_xscale = 1
 	if cooldown <= 10
 	{
@@ -14,7 +14,7 @@ if obj_dude_1.left = false
 
 if obj_dude_1.left = true
 {
-	x = obj_dude_1.x + 3;
+	x = obj_dude_1.x + 4;
 	image_xscale = -1
 	if cooldown <= 10
 	{
@@ -46,10 +46,17 @@ if obj_dude_1.left = true
 	}
 
 //Shooting
-if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && burst = 0 
-{ 
+if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && shots = 0
+{
+	shots = WFburst;
+}
 	//Type Affects
-	if WFtype = 0 && WFburst = 0
+if shots > 0 && delay <= 0
+{
+	delay = WFburstTime;
+	shots -= 1
+	
+	if WFtype = 0
 	{
 		repeat (WFpellets)
 		{
@@ -65,11 +72,6 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 
 			audio_play_sound(aud_weapon_fire_2,0,0);
 		}
 		ammo -= 1;
-	}
-	
-	if WFburst != 0
-	{
-		burst = WFburst;
 	}
 	
 	if WFtype = 2
@@ -84,31 +86,8 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 
 	cooldown = WFcooldown;
 }
 cooldown = cooldown - 1;
+delay -= 1;
 
-//Burst
-if burst > 0 
-{
-	if burstDelay <= 0
-	{
-		instance_create_layer(x, y, "Weapons", obj_bullet);
-		burst -= 1;
-		ammo -= 1;
-		burstDelay = WFburstTime;
-		
-		if random_range(0,1) = 0
-		{
-			audio_play_sound(aud_weapon_fire_1,0,0);
-		}
-		else
-		{
-			audio_play_sound(aud_weapon_fire_2,0,0);
-		}
-	}
-	else
-	{
-	burstDelay -= 1;
-	}
-}
 //Cooldown
 
 if cooldown > 0 && ammo != 0

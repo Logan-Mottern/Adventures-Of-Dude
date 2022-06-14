@@ -22,8 +22,8 @@ ammo = WFcapacity;
 reload = 0;
 reloadAnimation = 0;
 reloadAnimationTimer = 0;
-burst = 0;
-burstDelay = 0;
 ammo = 0;
+shots = 0;
+delay = 0;
 
 

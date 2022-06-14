@@ -1,5 +1,6 @@
-function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin,_damage,_speed,_falloff,_lifetime,_burst,_bTime,_type,_tier)
+function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin,_damage,_speed,_falloff,_lifetime,_type,_burst,_bTime,_tier)
 {
+	//Burst Time and Burst signify the amount of bullets to be shot so to shoot at all it must be set to 1
 	if instance_exists(obj_weapon)
 	{
 		with obj_weapon
