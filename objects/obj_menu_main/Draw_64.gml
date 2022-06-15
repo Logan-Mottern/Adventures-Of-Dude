@@ -6,7 +6,7 @@ var _mainW = 51;
 var _secondW = 58;
 
 //Draw the Menu
-var _mainI = 1;
+var _mainI = 3;
 if instance_exists(obj_weapon) _mainI += 2;
 draw_sprite_stretched
 	(
@@ -43,6 +43,28 @@ draw_sprite_stretched
 		draw_text(5,_mainTextY,"Reload: " + _reloadVal);
 		_mainTextY += 5;
 	}
+//Draw Timer
+_mainTextY += 5;
+if string_length(string(obj_dev.gameSec)) <= 2
+{
+	var _second = obj_dev.gameSec;
+}
+else
+{
+	var _second = string_copy(obj_dev.gameSec,1,2);
+}
+if _second < 10 
+{
+	var _display = "0" + string_copy(obj_dev.gameSec,1,1);
+}
+else
+{
+	var _display = _second;
+}
+var _minute = obj_dev.gameMin
+draw_text(5,_mainTextY,"Time : "+ string(_minute) + ":" + _display);
+_mainTextY += 5;
+
 	
 //Draw the second menu
 var _secondI = 23

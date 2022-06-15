@@ -51,7 +51,7 @@ if (keyRight - keyLeft != 0) or (keyDown - keyUp != 0)
 		{
 			walk = 1;
 		}
-		walkCycle = 5;
+	walkCycle = 5;
 	}
 }
 else
@@ -102,6 +102,13 @@ if imageCycleHit != 0
 
 //Weapons
 
+if (keyboard_check(ord("Q")))
+{
+	instance_destroy(obj_weapon);
+}
+
+if obj_dev.devMode = false
+{
 if (keyboard_check(ord("1")))
 {
 	if weaponRand1 = 0 activeWeapon(spr_st_single,"ammo_St_N",0,45,1,1,1,9,4,5,0,0,0,1,0,0);
@@ -116,7 +123,7 @@ if (keyboard_check(ord("2")))
 {
 	if weaponRand2 = 0 activeWeapon(spr_sh_single,"ammo_Sh_N",0,45,1,3,5,5,1,5,0,0,0,1,0,0);
 	if weaponRand2 = 1 activeWeapon(spr_sh_light,"ammo_Sh_N",20,135,6,3,8,44,0.5,5,0,0,0,1,0,0);
-	if weaponRand2 = 2 activeWeapon(spr_sh_heavy,"ammo_Sh_N",30,90,3,5,3,1,1.5,5,0,0,0,1,0,0);
+	if weaponRand2 = 2 activeWeapon(spr_sh_heavy,"ammo_Sh_N",30,90,3,5,3,0,1.5,5,0,0,0,1,0,0);
 	if weaponRand2 = 3 activeWeapon(spr_sh_burst,"ammo_Sh_N",30,90,9,5,3,13,1,5,0,0,0,3,2,0);
 
 }
@@ -126,141 +133,23 @@ if (keyboard_check(ord("3")))
 	if weaponRand3 = 0 activeWeapon(spr_en_burst,"ammo_En_N",15,90,30,4,1,26,1,7,0,0,0,5,1,0);
 	if weaponRand3 = 1 activeWeapon(spr_en_light,"ammo_En_N",3,45,30,4,1,2,1,7,0,0,0,1,0,0);
 }
-/*
-if (keyboard_check(ord("I"))) type = 1;
-if (keyboard_check(ord("O"))) type = 2;
-if (keyboard_check(ord("P"))) type = 3;21
-if (keyboard_check(ord("J"))) type = 4;
-if (keyboard_check(ord("K"))) type = 5;
-if (keyboard_check(ord("L"))) type = 6;
-if (keyboard_check(ord(";"))) type = 7;
-
-if (keyboard_check(ord("Q")))
-{
-	instance_destroy(obj_weapon);
 }
 
-//Weapon List
-if type = 1
+if obj_dev.devMode = true
 {
-	//Single
-	if (keyboard_check(ord("1"))) activeWeapon(spr_st_single,"ammo_St_N",0,45,1,1,1,9,4,5,0,0,0,0);
-	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon(spr_st_burst,"ammo_St_N",30,90,8,4,2,49,3,5,0,0,1,0);
-	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon(spr_st_light,"ammo_St_N",5,90,20,5,1,16,2,5,0,0,0,0);
-	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon(spr_st_heavy,"ammo_St_N",8,180,50,6,1,17,3,5,0,0,0,0);
-	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon(spr_st_rifle,"ammo_St_N",45,90,4,0,1,1,5,7,0,0,0,0);
-	//Inf
-	if (keyboard_check(ord("6"))) activeWeapon();
-}
-
-if type = 2
-{
-	//Single
-	if (keyboard_check(ord("1"))) activeWeapon();
-	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon();
-	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon();
-	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon();
-	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon();
-	//Inf
-	if (keyboard_check(ord("6"))) activeWeapon();
-}
-
-if type = 3
-{
-	//Single
-	if (keyboard_check(ord("1"))) activeWeapon();
-	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon();
-	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon();
-	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon();
-	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon();
-	//Inf
-	if (keyboard_check(ord("6"))) activeWeapon();
-}
-
-if type = 4
-{
-	//Single
-	if (keyboard_check(ord("1"))) activeWeapon();
-	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon();
-	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon();
-	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon();
-	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon();
-	//Inf
-	if (keyboard_check(ord("6"))) activeWeapon();
-}
-
-if type = 5
-{
-	//Single
-	if (keyboard_check(ord("1"))) activeWeapon();
-	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon();
-	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon();
-	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon();
-	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon();
-	//Inf
-	if (keyboard_check(ord("6"))) activeWeapon();
-}
-
-if type = 6
-{
-	//Single
-	if (keyboard_check(ord("1"))) activeWeapon(spr_he_single,"ammo_He_N",0,60,1,3,1,13,10,3,0.02,300,2,0);
-	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon();
-	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon();
-	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon();
-	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon();
-	//Inf
-	if (keyboard_check(ord("6"))) activeWeapon();
-}
-
-if type = 7
-{
-	//Single
-	if (keyboard_check(ord("1"))) activeWeapon();
-	//Burst
-	if (keyboard_check(ord("2"))) activeWeapon();
-	//Auto L
-	if (keyboard_check(ord("3"))) activeWeapon();
-	//Auto H
-	if (keyboard_check(ord("4"))) activeWeapon();
-	//Rifle
-	if (keyboard_check(ord("5"))) activeWeapon();
-	//Inf
-	if (keyboard_check(ord("6"))) activeWeapon();
-	//Explo
-	if (keyboard_check(ord("7"))) activeWeapon();
-	//Elem
-	if (keyboard_check(ord("8"))) activeWeapon();
-	//Energy
-	if (keyboard_check(ord("9"))) activeWeapon();
-	//Shotgun
-	if (keyboard_check(ord("0"))) activeWeapon();
-}
-*/
-//Dev Tools
-
 if (keyboard_check(ord("N"))) ammo_drop(x,y,10,1,1);
+if (keyboard_check(ord("1"))) activeWeapon(spr_st_single,"ammo_St_N",0,45,1,1,1,9,4,5,0,0,0,1,0,0);
+if (keyboard_check(ord("2"))) activeWeapon(spr_st_burst,"ammo_St_N",30,90,8,4,1,49,3,5,0,0,0,2,3,0);
+if (keyboard_check(ord("3"))) activeWeapon(spr_st_light,"ammo_St_N",5,90,20,5,1,16,2,5,0,0,0,1,0,0);
+if (keyboard_check(ord("4"))) activeWeapon(spr_st_heavy,"ammo_St_N",8,180,50,6,1,17,3,5,0,0,0,1,0,0);
+if (keyboard_check(ord("5"))) activeWeapon(spr_st_rifle,"ammo_St_N",45,90,4,0,1,1,5,7,0,0,0,1,0,0);
+if (keyboard_check(ord("6"))) activeWeapon(spr_st_inf,"ammo_St_N",0,3,1,7,1,3,1,5,0,0,0,1,0,0);
+if (keyboard_check(ord("7"))) activeWeapon(spr_sh_single,"ammo_Sh_N",0,45,1,3,5,5,1,5,0,0,0,1,0,0);
+if (keyboard_check(ord("8"))) activeWeapon(spr_sh_light,"ammo_Sh_N",20,135,6,3,8,44,0.5,5,0,0,0,1,0,0);
+if (keyboard_check(ord("9"))) activeWeapon(spr_sh_heavy,"ammo_Sh_N",30,90,3,5,3,0,1.5,5,0,0,0,1,0,0);
+if (keyboard_check(ord("0"))) activeWeapon(spr_sh_burst,"ammo_Sh_N",30,90,9,5,3,13,1,5,0,0,0,3,2,0);
+if (keyboard_check(ord("E"))) activeWeapon(spr_en_burst,"ammo_En_N",15,90,30,4,1,26,1,7,0,0,0,5,1,0);
+if (keyboard_check(ord("R"))) activeWeapon(spr_en_light,"ammo_En_N",3,45,30,4,1,2,1,7,0,0,0,1,0,0);
+if (keyboard_check(ord("T"))) activeWeapon(spr_st_inf,"ammo_St_N",0,1,1,7,1,3,1,5,0,0,0,1,0,0);
+if (keyboard_check(ord("Y"))) activeWeapon(spr_sh_burst,"ammo_Sh_N",30,90,9,5,8,13,1,5,0,0,0,8,1,0);
+}
