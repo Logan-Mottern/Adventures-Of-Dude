@@ -40,6 +40,11 @@ if obj_dude_1.left = true
 		object_set_sprite(obj_bullet,spr_bullet_E);
 		var _total = obj_menu_main.inv.ammo.En.norm
 	}
+	if WFammo = "ammo_En_N_H"
+	{
+		object_set_sprite(obj_bullet,spr_bullet_E_H);
+		var _total = obj_menu_main.inv.ammo.En.norm
+	}
 	if WFammo = "ammo_He_N"
 	{
 		object_set_sprite(obj_bullet,spr_bullet_explo_1);
@@ -74,16 +79,7 @@ if shots > 0 && delay <= 0
 		}
 		ammo -= 1;
 	}
-	
-	if WFtype = 2
-	{
-		repeat (WFpellets)
-		{
-			instance_create_layer(x, y, "Weapons", obj_bullet);
-		}	
-		ammo -= 1;
-	}
-	
+
 	cooldown = WFcooldown;
 }
 cooldown = cooldown - 1;
@@ -145,6 +141,7 @@ if ammo = 0 && _total >= WFcapacity
 		if WFammo = "ammo_St_N" obj_menu_main.inv.ammo.St.norm -= WFcapacity;
 		if WFammo = "ammo_Sh_N" obj_menu_main.inv.ammo.Sh.norm -= WFcapacity;
 		if WFammo = "ammo_En_N" obj_menu_main.inv.ammo.En.norm -= WFcapacity;
+		if WFammo = "ammo_En_N_H" obj_menu_main.inv.ammo.En.norm -= WFcapacity;
 		if WFammo = "ammo_He_N" obj_menu_main.inv.ammo.He.norm -= WFcapacity;
 	}
 }

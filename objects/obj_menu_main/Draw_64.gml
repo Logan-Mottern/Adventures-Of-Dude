@@ -67,9 +67,9 @@ _mainTextY += 5;
 
 	
 //Draw the second menu
-var _secondI = 23
+var _secondI = 24
 
-if keyboard_check(vk_tab)
+if tab > 0 //keyboard_check(vk_tab)
 {
 	draw_sprite_stretched
 		(
@@ -109,11 +109,13 @@ if keyboard_check(vk_tab)
 	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.El.norm));
 	_secondTextY += 10;
 //Light Explosive
-	draw_text(_mainW+6,_secondTextY,"LIGHT EXPLO ");
+	draw_text(_mainW+6,_secondTextY,"PLASMA ");
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.Le.norm));
+	draw_text(_mainW+6,_secondTextY," Normal : " + string(inv.ammo.Pl.norm));
 	_secondTextY += 5;
-	draw_text(_mainW+6,_secondTextY," Frag   : " + string(inv.ammo.Le.frag));
+	draw_text(_mainW+6,_secondTextY," Frag   : " + string(inv.ammo.Pl.frag));
+	_secondTextY += 5;
+	draw_text(_mainW+6,_secondTextY," Chaotic: " + string(inv.ammo.Pl.caos));
 	_secondTextY += 10;
 //Heavy Explosive
 	draw_text(_mainW+6,_secondTextY,"HEAVY EXPLO ");

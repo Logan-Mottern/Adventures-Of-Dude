@@ -1,4 +1,4 @@
-function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin,_damage,_speed,_falloff,_lifetime,_type,_burst,_bTime,_tier)
+function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets,_spin,_damage,_speed,_var1,_var2,_type,_burst,_bTime,_tier)
 {
 	//Burst Time and Burst signify the amount of bullets to be shot so to shoot at all it must be set to 1
 	if instance_exists(obj_weapon)
@@ -8,6 +8,7 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 			if WFammo = "ammo_St_N" obj_menu_main.inv.ammo.St.norm += ammo;
 			if WFammo = "ammo_Sh_N" obj_menu_main.inv.ammo.Sh.norm += ammo;
 			if WFammo = "ammo_En_N" obj_menu_main.inv.ammo.En.norm += ammo;
+			if WFammo = "ammo_En_N_H" obj_menu_main.inv.ammo.En.norm += ammo;
 			if WFammo = "ammo_He_N" obj_menu_main.inv.ammo.He.norm += ammo;
 		}
 		instance_destroy(obj_weapon);
@@ -28,12 +29,12 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 		WFspin = _spin;
 		WFdamage = _damage;
 		WFspeed = _speed;
-		WFfalloff = _falloff;
-		WFlifetime = _lifetime;
 		WFtype = _type;
 		WFtier = _tier;
 		WFburst = _burst;
 		WFburstTime = _bTime;
+		WFvar1 = _var1;
+		WFvar2 = _var2;
 	}
 }
 

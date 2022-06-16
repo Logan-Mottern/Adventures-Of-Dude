@@ -2,8 +2,7 @@ display_set_gui_size(384,216);
 
 //Misc Variables
 
-tab = true;
-statusTime = 0;
+tab = false;
 
 //Inv Variables
 inv =
@@ -29,10 +28,11 @@ inv =
 		{
 			norm : 0
 		},
-		Le :
+		Pl :
 		{
 			norm : 0,
-			frag : 0
+			frag : 0,
+			caos : 0
 		},
 		He :
 		{
