@@ -41,6 +41,63 @@ inv =
 			flame : 0
 		},
 	},
-};
+	weapon :
+	{
+		St :
+		{
+			single : 0,
+			burst : 0,
+			light : 0,
+			heavy : 0,
+			rifle : 0,
+			inf : 0
+		},
+		Sh :
+		{
+			single : 0,
+			burst : 0,
+			light : 0,
+			heavy : 0,
+			rifle : 0,
+			inf : 0
+		},
+		En : 
+		{
+			single : 0,
+			burst : 0,
+			light : 0,
+			heavy : 0,
+			rifle : 0,
+			inf : 0
+		},
+		El :
+		{
+			single : 0,
+			burst : 0,
+			light : 0,
+			heavy : 0,
+			rifle : 0,
+			inf : 0
+		},
+		Pl :
+		{
+			single : 0,
+			burst : 0,
+			light : 0,
+			heavy : 0,
+			rifle : 0,
+			inf : 0
+		},
+		He :
+		{
+			single : 0,
+			burst : 0,
+			light : 0,
+			heavy : 0,
+			rifle : 0,
+			inf : 0
+		},
+	},
+}
 
 

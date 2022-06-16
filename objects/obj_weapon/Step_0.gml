@@ -8,7 +8,7 @@ if obj_dude_1.left = false
 	image_xscale = 1
 	if cooldown <= 10
 	{
-		image_angle = obj_dude_1.direction;
+		image_angle = point_direction(x,y,mouse_x,mouse_y);
 	}
 }
 
@@ -18,9 +18,10 @@ if obj_dude_1.left = true
 	image_xscale = -1
 	if cooldown <= 10
 	{
-		image_angle = obj_dude_1.direction + 180;
+		image_angle = point_direction(x,y,mouse_x,mouse_y) + 180;
 	}
 }
+
 
 //Ammo System
 

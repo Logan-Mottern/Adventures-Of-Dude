@@ -132,3 +132,4 @@ if instance_exists(obj_totem)
 {
 	if (obj_totem.totem = true) statusUpdate("Collected Totem!");
 }
+
