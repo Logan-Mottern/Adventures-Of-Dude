@@ -35,6 +35,11 @@ if obj_dude_1.left = true
 		object_set_sprite(obj_bullet,spr_bullet);
 		var _total = obj_menu_main.inv.ammo.Sh.norm
 	}
+	if WFammo = "ammo_Sh_N_H"
+	{
+		object_set_sprite(obj_bullet,spr_bullet);
+		var _total = obj_menu_main.inv.ammo.Sh.norm
+	}
 	if WFammo = "ammo_En_N"
 	{
 		object_set_sprite(obj_bullet,spr_bullet_E);
@@ -56,13 +61,21 @@ if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 
 {
 	shots = WFburst;
 }
+if WFtype = 1
+{
+	if (mouse_check_button(mb_right)) && instance_exists(obj_bullet)
+	{
+		bulletSplit = true;
+	}
+}
+
 	//Type Affects
 if shots > 0 && delay <= 0
 {
 	delay = WFburstTime;
 	shots -= 1
 	
-	if WFtype = 0
+	if WFtype = 0 or WFtype = 1
 	{
 		repeat (WFpellets)
 		{

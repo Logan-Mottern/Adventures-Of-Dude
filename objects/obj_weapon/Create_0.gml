@@ -25,5 +25,6 @@ reloadAnimationTimer = 0;
 ammo = 0;
 shots = 0;
 delay = 0;
+bulletSplit = false;
 
 

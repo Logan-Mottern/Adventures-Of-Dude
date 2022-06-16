@@ -126,8 +126,7 @@ if (keyboard_check(ord("2")))
 	if weaponRand2 = 2 activeWeapon(spr_sh_light,"ammo_Sh_N",20,135,6,3,8,44,0.5,5,0,0,0,1,0,0);
 	if weaponRand2 = 3 activeWeapon(spr_sh_heavy,"ammo_Sh_N",30,90,3,5,3,0,1.5,5,0,0,0,1,0,0);
 	if weaponRand2 = 4 activeWeapon(spr_sh_inf,"ammo_Sh_N",0,10,1,7,5,7,1,5,0,0,0,1,0,0);
-
-
+	if weaponRand2 = 5 activeWeapon(spr_sh_rifle,"ammo_Sh_N_H",15,135,4,0,1,11,6,5,5,1,1,1,0,0);
 }
 
 if (keyboard_check(ord("3")))
@@ -161,4 +160,5 @@ if (keyboard_check(ord("Y"))) activeWeapon(spr_en_heavy,"ammo_En_N_H",10,60,20,3
 if (keyboard_check(ord("U"))) activeWeapon(spr_en_rifle,"ammo_En_N_H",30,180,5,0,1,45,7.5,9,0,0,0,1,0,0);
 if (keyboard_check(ord("I"))) activeWeapon(spr_en_single,"ammo_En_N_H",0,60,1,3,2,12,3,7,0,0,0,1,0,0);
 if (keyboard_check(ord("O"))) activeWeapon(spr_sh_inf,"ammo_Sh_N",0,10,1,7,5,7,1,5,0,0,0,1,0,0);
+if (keyboard_check(ord("P"))) activeWeapon(spr_sh_rifle,"ammo_Sh_N_H",15,135,4,0,1,11,6,5,5,1,1,1,0,0);
 }
