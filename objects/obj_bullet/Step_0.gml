@@ -22,4 +22,9 @@ if obj_weapon.bulletSplit = true && sprite_index != spr_bullet_shatter
 	obj_weapon.bulletSplit = false;
 	instance_destroy();
 }
+if obj_weapon.WFtype = 3
+{
+	direction = point_direction(obj_weapon.x,obj_weapon.y,mouse_x,mouse_y);
+	image_angle = direction;
+}
 

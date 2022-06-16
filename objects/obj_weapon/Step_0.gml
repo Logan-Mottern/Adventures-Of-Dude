@@ -56,6 +56,11 @@ if obj_dude_1.left = true
 		object_set_sprite(obj_bullet,spr_bullet_explo_1);
 		var _total = obj_menu_main.inv.ammo.He.norm
 	}
+	if WFammo = "ammo_He_N_H"
+	{
+		object_set_sprite(obj_bullet,spr_rocket);
+		var _total = obj_menu_main.inv.ammo.He.norm
+	}
 	if WFammo = "ammo_god"
 	{
 		object_set_sprite(obj_bullet,spr_darkness);

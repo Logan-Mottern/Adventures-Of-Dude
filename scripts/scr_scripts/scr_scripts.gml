@@ -41,6 +41,7 @@ function activeWeapon(_weapon,_ammo,_cooldown,_reload,_capacity,_spread,_pellets
 function explosion(_x,_y,_type,_damage)
 {
 	if _type = 0 object_set_sprite(obj_explosion,spr_explosion_large);
+	if _type = 1 object_set_sprite(obj_explosion,spr_explosion_small);
 	
 	instance_create_layer(_x,_y,"Weapons",obj_explosion);
 	

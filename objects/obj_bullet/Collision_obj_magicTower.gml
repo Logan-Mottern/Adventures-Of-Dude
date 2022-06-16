@@ -7,3 +7,8 @@ if obj_weapon.WFtype = 0 or obj_weapon.WFtype = 1
 	}
 	instance_destroy();
 }
+
+if obj_weapon.WFtype = 3
+{
+	explosion(x,x,1,0.1);
+}
