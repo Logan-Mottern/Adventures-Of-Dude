@@ -33,6 +33,7 @@
     {"id":{"name":"obj_darkness","path":"objects/obj_darkness/obj_darkness.yy",},"order":3,},
     {"id":{"name":"spr_en_heavy","path":"sprites/spr_en_heavy/spr_en_heavy.yy",},"order":3,},
     {"id":{"name":"spr_dude_2","path":"sprites/spr_dude_2/spr_dude_2.yy",},"order":16,},
+    {"id":{"name":"spr_thanos","path":"sprites/spr_thanos/spr_thanos.yy",},"order":21,},
     {"id":{"name":"aud_weapon_click","path":"sounds/aud_weapon_click/aud_weapon_click.yy",},"order":1,},
     {"id":{"name":"obj_shatter","path":"objects/obj_shatter/obj_shatter.yy",},"order":7,},
     {"id":{"name":"spr_he_single","path":"sprites/spr_he_single/spr_he_single.yy",},"order":0,},

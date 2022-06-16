@@ -55,6 +55,11 @@ if obj_dude_1.left = true
 		object_set_sprite(obj_bullet,spr_bullet_explo_1);
 		var _total = obj_menu_main.inv.ammo.He.norm
 	}
+	if WFammo = "ammo_god"
+	{
+		object_set_sprite(obj_bullet,spr_darkness);
+		var _total = obj_menu_main.inv.ammo.St.norm
+	}
 
 //Shooting
 if (mouse_check_button(mb_left)) && (cooldown <= 0) && ammo != 0 && reload <= 0 && shots = 0
@@ -92,7 +97,12 @@ if shots > 0 && delay <= 0
 		}
 		ammo -= 1;
 	}
-
+	if WFtype = -1
+	{
+		instance_destroy(obj_blue_slime);
+		instance_destroy(obj_magicTower);
+		audio_play_sound(aud_weapon_click,0,0);
+	}
 	cooldown = WFcooldown;
 }
 cooldown = cooldown - 1;

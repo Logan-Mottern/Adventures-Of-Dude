@@ -5,7 +5,7 @@ if image_xscale < .75
 
 image_yscale = image_xscale;
 
-if point_distance(x,y,obj_dude_1.x,obj_dude_1.y) >= 256
+if point_distance(x,y,obj_dude_1.x,obj_dude_1.y) >= 256 && obj_weapon.WFammo != "ammo_god"
 {
 	instance_destroy();
 }
