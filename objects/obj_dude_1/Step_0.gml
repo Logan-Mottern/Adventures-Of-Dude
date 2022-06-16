@@ -99,7 +99,11 @@ if imageCycleHit != 0
 {
 	imageCycleHit = imageCycleHit - 1;
 }
-
+//Scroll
+if mouse_wheel_down() scroll -= 1
+if mouse_wheel_up() scroll += 1
+if scroll >= 6 scroll = 0;
+if scroll <= -1 scroll = 5;
 //Weapons
 
 if (keyboard_check(ord("Q")))
@@ -125,8 +129,9 @@ if (keyboard_check(ord("2")))
 	if weaponRand2 = 1 activeWeapon(spr_sh_burst,"ammo_Sh_N",30,90,9,5,3,13,1,5,0,0,0,3,2,0);
 	if weaponRand2 = 2 activeWeapon(spr_sh_light,"ammo_Sh_N",20,135,6,3,8,44,0.5,5,0,0,0,1,0,0);
 	if weaponRand2 = 3 activeWeapon(spr_sh_heavy,"ammo_Sh_N",30,90,3,5,3,0,1.5,5,0,0,0,1,0,0);
-	if weaponRand2 = 4 activeWeapon(spr_sh_inf,"ammo_Sh_N",0,10,1,7,5,7,1,5,0,0,0,1,0,0);
-	if weaponRand2 = 5 activeWeapon(spr_sh_rifle,"ammo_Sh_N_H",15,135,4,0,1,11,6,5,5,1,1,1,0,0);
+	if weaponRand2 = 4 activeWeapon(spr_sh_rifle,"ammo_Sh_N_H",15,135,4,0,1,11,6,5,5,1,1,1,0,0);
+	if weaponRand2 = 5 activeWeapon(spr_sh_inf,"ammo_Sh_N",0,10,1,7,5,7,1,5,0,0,0,1,0,0);
+
 }
 
 if (keyboard_check(ord("3")))

@@ -6,7 +6,7 @@ var _mainW = 51;
 var _secondW = 58;
 
 //Draw the Menu
-var _mainI = 3;
+var _mainI = 4;
 if instance_exists(obj_weapon) _mainI += 2;
 draw_sprite_stretched
 	(
@@ -21,7 +21,9 @@ draw_sprite_stretched
 //Draw Health
 	draw_text(5,_mainTextY,"Health: " + string(obj_dude_1.dudehp));
 	_mainTextY += 5;
-
+//Draw Action
+	draw_text(5,_mainTextY,"Action: " + string(obj_dude_1.scroll + 1));
+	_mainTextY += 5;
 //Draw Ammo
 	if instance_exists(obj_weapon)
 	{
@@ -64,7 +66,6 @@ else
 var _minute = obj_dev.gameMin
 draw_text(5,_mainTextY,"Time : "+ string(_minute) + ":" + _display);
 _mainTextY += 5;
-
 	
 //Draw the second menu
 var _secondI = 24
