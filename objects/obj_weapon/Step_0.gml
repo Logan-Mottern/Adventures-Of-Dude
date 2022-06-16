@@ -86,7 +86,7 @@ if shots > 0 && delay <= 0
 	delay = WFburstTime;
 	shots -= 1
 	
-	if WFtype = 0 or WFtype = 1
+	if WFtype = 0 or WFtype = 1 or WFtype = 3
 	{
 		repeat (WFpellets)
 		{

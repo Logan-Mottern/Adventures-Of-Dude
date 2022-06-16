@@ -10,5 +10,6 @@ if obj_weapon.WFtype = 0 or obj_weapon.WFtype = 1
 
 if obj_weapon.WFtype = 3
 {
-	explosion(x,x,1,0.1);
+	explosion(x,y,0,0.5);
+	instance_destroy();
 }

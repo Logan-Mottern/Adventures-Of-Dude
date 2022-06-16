@@ -30,7 +30,5 @@ with obj_dude_1
 		if weaponRand3 = 4 activeWeapon(spr_en_rifle,"ammo_En_N_H",30,180,5,0,1,45,7.5,9,0,0,0,1,0,0);
 		if weaponRand3 = 5 activeWeapon(spr_en_inf,"ammo_En_N",0,2,1,4,1,3,0.5,7,0,0,0,1,0,0);
 	}
-	
-	audio_play_sound(aud_weapon_click,0,0);
 }
 
