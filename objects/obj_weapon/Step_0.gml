@@ -61,6 +61,11 @@ if obj_dude_1.left = true
 		object_set_sprite(obj_bullet,spr_rocket);
 		var _total = obj_menu_main.inv.ammo.He.norm
 	}
+	if WFammo = "ammo_Pl_N"
+	{
+		object_set_sprite(obj_bullet,spr_bullet_E);
+		var _total = obj_menu_main.inv.ammo.Pl.norm
+	}
 	if WFammo = "ammo_god"
 	{
 		object_set_sprite(obj_bullet,spr_darkness);
@@ -86,7 +91,7 @@ if shots > 0 && delay <= 0
 	delay = WFburstTime;
 	shots -= 1
 	
-	if WFtype = 0 or WFtype = 1 or WFtype = 3
+	if WFtype = 0 or WFtype = 1 or WFtype = 3 or WFtype = 4
 	{
 		repeat (WFpellets)
 		{

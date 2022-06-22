@@ -42,7 +42,8 @@ function explosion(_x,_y,_type,_damage)
 {
 	if _type = 0 object_set_sprite(obj_explosion,spr_explosion_large);
 	if _type = 1 object_set_sprite(obj_explosion,spr_explosion_small);
-	
+	if _type = 2 object_set_sprite(obj_explosion,spr_plasma);
+
 	instance_create_layer(_x,_y,"Weapons",obj_explosion);
 	
 	with obj_explosion
@@ -64,12 +65,7 @@ function ammo_drop(_x,_y,_quantity,_rarity,_special)
 		special = _special;
 	}
 }
-/*
-function ammo_add(_type,_quantity)
-{
-	with obj_menu_main
-*/
-//Break
+
 function healthbar(_x,_y,_health,_healthMax)
 {
 	if _health != _healthMax && _health != 0
